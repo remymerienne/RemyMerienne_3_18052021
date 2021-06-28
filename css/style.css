@@ -1,0 +1,27 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  max-width: 1920px;
+  background-color: #9256dc;
+}
+
+.page {
+  width: 375px;
+  height: 800px;
+  background-color: #ff7ad9;
+}
+
+/*# sourceMappingURL=style.css.map */
