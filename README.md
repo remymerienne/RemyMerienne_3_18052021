@@ -77,7 +77,7 @@
 
 #### 1.1.3.2. `feature/index-header`
 
-- \[FEAT\]header(#6): develop the search module ***`open`***
+- \[FEAT\]header(#6): develop the search module ***`close`***
 
 - \[FEAT\]header(#17): add fonts ***`open`***
 
