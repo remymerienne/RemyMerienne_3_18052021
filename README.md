@@ -73,40 +73,42 @@
 
 #### 1.1.3.1. `feature/btn`
 
-- \[FEAT\](#1): develop the btn module
+- \[FEAT\](#1): develop the btn module ***`open`***
 
 #### 1.1.3.2. `feature/index-header`
 
-- \[FEAT\]header(#2): develop the search module
+- \[FEAT\]header(#6): develop the search module ***`open`***
 
-- \[FEAT\]header(#3): do general layout of header
+- \[FEAT\]header(#17): add fonts ***`open`***
+
+- \[FEAT\]header(#7): do general layout of header ***`open`***
 
 #### 1.1.3.3. `feature/index-information-section`
 
-- \[FEAT\]section(#4): develop the step module
+- \[FEAT\]section(#8): develop the step module ***`open`***
   
-- \[FEAT\]section(#5): add steps  
+- \[FEAT\]section(#9): add steps ***`open`***  
   Three differents types
 
-- \[FEAT\]section(#6): do general layout of section
+- \[FEAT\]section(#10): do general layout of section ***`open`***
 
 #### 1.1.3.4. `feature/index-navigation`
 
-- \[FEAT\]nav(#7): develop the thumbnail template
+- \[FEAT\]nav(#11): develop the thumbnail template ***`open`***
 
-- \[FEAT\]nav(#8): integrate the four thumbnails
+- \[FEAT\]nav(#12): integrate the four thumbnails ***`open`***
 
-- \[FEAT\]nav(#9): do general layout of navigation
+- \[FEAT\]nav(#13): do general layout of navigation ***`open`***
 
 #### 1.1.3.5. `feature/footer`
 
-- \[FEAT\]footer(#10): add footer
+- \[FEAT\]footer(#14): add footer ***`open`***
 
 #### 1.1.3.6. `feature/index`
 
-- \[FEAT\](#11): do general layout of index
+- \[FEAT\](#15): do general layout of index ***`open`***
 
-- \[REFACTOR\](#12): clean code
+- \[REFACTOR\](#16): clean code ***`open`***
 
 ## 1.2. `release/v1.0.0`
 
@@ -162,30 +164,30 @@ Publication de _index.html_
 
 #### 1.3.3.1. `feature/menu-header`
 
-- \[FEAT\]header(#13): add h1 title and back arrow 
+- \[FEAT\]header(#): add h1 title and back arrow 
 
 #### 1.3.3.2. `feature/menu-section-header`
 
-- \[FEAT\]section(#14): add h2 title and heart  
+- \[FEAT\]section(#): add h2 title and heart  
     Don't forget top border radius.
 
-- \[FEAT\]section(#15): add background and layout
+- \[FEAT\]section(#): add background and layout
 
 #### 1.3.3.3. `feature/menu-stage-section`
 
-- \[FEAT\]section(#16): develop the dish template
+- \[FEAT\]section(#): develop the dish template
 
-- \[FEAT\]section(#17): integrate three stages
+- \[FEAT\]section(#): integrate three stages
 
-- \[FEAT\]section(#18): do general layout of section
+- \[FEAT\]section(#): do general layout of section
 
 #### 1.3.3.4. `feature/menu`
 
-- \[FEAT\](#19): add bnt and footer
+- \[FEAT\](#): add bnt and footer
 
-- \[FEAT\](#20): do general layout of page
+- \[FEAT\](#): do general layout of page
 
-- \[REFACTOR\](#21): clean code
+- \[REFACTOR\](#): clean code
 
 ## 1.4. `release/v1.1.0`
 
@@ -193,15 +195,15 @@ Publication de _menu_1.html_
 
 ## 1.5. Effets `feature/effects`
 
-- \[FEAT\](#22): add effect on btn
+- \[FEAT\](#): add effect on btn
 
-- \[FEAT\](#23): add effect on heart
+- \[FEAT\](#): add effect on heart
 
-- \[FEAT\]menu(#24): add slide effect
+- \[FEAT\]menu(#): add slide effect
 
-- \[FEAT\]menu(#25): add effect "hide and show"
+- \[FEAT\]menu(#): add effect "hide and show"
 
-- \[FEAT\]index(#26): add effect "loading spinner"
+- \[FEAT\]index(#): add effect "loading spinner"
 
 ## 1.6. `release/v1.2.0`
 
