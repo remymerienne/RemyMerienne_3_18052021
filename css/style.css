@@ -15,13 +15,28 @@ body {
   flex-direction: column;
   margin: auto;
   max-width: 1920px;
-  background-color: #9256dc;
 }
 
 .page {
   width: 375px;
   height: 800px;
-  background-color: #ff7ad9;
+  border: 1px solid black;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 220px;
+  height: 50px;
+  margin: 0 auto 0 auto;
+  box-shadow: 0 3px 10px 1px #afacac;
+  border-radius: 50px;
+  background: linear-gradient(to bottom right, #ff7ad9, #9256dc);
+}
+.button__p {
+  color: #ffffff;
+  font-size: 17px;
 }
 
 /*# sourceMappingURL=style.css.map */
