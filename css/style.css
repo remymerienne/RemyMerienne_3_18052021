@@ -9,6 +9,26 @@ body {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+.header__h1 {
+  margin: 0;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  background-color: #ffffff;
+  font-family: "Shrikhand", serif;
+  font-size: 31px;
+  font-weight: lighter;
+  text-align: center;
+}
+
 .container {
   display: flex;
   align-items: center;
@@ -36,7 +56,40 @@ body {
 }
 .button__p {
   color: #ffffff;
-  font-size: 17px;
+  font-size: 15px;
+}
+
+.header {
+  height: 400px;
+  background-color: #f6f6f6;
+}
+.header__h2 {
+  margin: 35px 50px 5px 50px;
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+}
+.header__p {
+  margin: 14px 20px 30px 20px;
+  font-size: 18px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0px 4px 5px -3px #afacac;
+  background-color: #eaeaea;
+}
+.search__p {
+  font-size: 16px;
+  margin-left: 16px;
+}
+.search__icon {
+  font-size: 16px;
+  margin-bottom: 6px;
+  margin-left: 103px;
 }
 
 /*# sourceMappingURL=style.css.map */

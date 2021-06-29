@@ -73,15 +73,15 @@
 
 #### 1.1.3.1. `feature/btn`
 
-- \[FEAT\](#1): develop the btn module ***`open`***
+- \[FEAT\](#1): develop the btn module ***`close`***
 
 #### 1.1.3.2. `feature/index-header`
 
-- \[FEAT\]header(#6): develop the search module ***`open`***
+- \[FEAT\]header(#6): develop the search module ***`close`***
 
-- \[FEAT\]header(#17): add fonts ***`open`***
+- \[FEAT\]header(#17): add fonts ***`close`***
 
-- \[FEAT\]header(#7): do general layout of header ***`open`***
+- \[FEAT\]header(#7): do general layout of header ***`close`***
 
 #### 1.1.3.3. `feature/index-information-section`
 
