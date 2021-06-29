@@ -73,7 +73,7 @@
 
 #### 1.1.3.1. `feature/btn`
 
-- \[FEAT\](#1): develop the btn module ***`open`***
+- \[FEAT\](#1): develop the btn module ***`close`***
 
 #### 1.1.3.2. `feature/index-header`
 

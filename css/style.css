@@ -39,4 +39,20 @@ body {
   font-size: 17px;
 }
 
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0px 4px 5px -3px #afacac;
+  background-color: #eaeaea;
+}
+.search__p {
+  font-size: 18px;
+  margin-left: 20px;
+}
+.search__icon {
+  font-size: 17px;
+  margin-bottom: 4px;
+}
+
 /*# sourceMappingURL=style.css.map */
