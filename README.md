@@ -79,9 +79,9 @@
 
 - \[FEAT\]header(#6): develop the search module ***`close`***
 
-- \[FEAT\]header(#17): add fonts ***`open`***
+- \[FEAT\]header(#17): add fonts ***`close`***
 
-- \[FEAT\]header(#7): do general layout of header ***`open`***
+- \[FEAT\]header(#7): do general layout of header ***`close`***
 
 #### 1.1.3.3. `feature/index-information-section`
 
