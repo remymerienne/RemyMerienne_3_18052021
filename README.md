@@ -87,7 +87,7 @@
 
 - \[FEAT\]section(#8): develop the step module ***`close`***
   
-- \[FEAT\]section(#9): add steps ***`open`***  
+- \[FEAT\]section(#9): add steps ***`close`***  
   Three differents types
 
 - \[FEAT\]section(#10): do general layout of section ***`open`***
