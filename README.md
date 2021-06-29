@@ -85,7 +85,7 @@
 
 #### 1.1.3.3. `feature/index-information-section`
 
-- \[FEAT\]section(#8): develop the step module ***`open`***
+- \[FEAT\]section(#8): develop the step module ***`close`***
   
 - \[FEAT\]section(#9): add steps ***`open`***  
   Three differents types
