@@ -90,7 +90,7 @@
 - \[FEAT\]section(#9): add steps ***`close`***  
   Three differents types
 
-- \[FEAT\]section(#10): do general layout of section ***`open`***
+- \[FEAT\]section(#10): do general layout of section ***`close`***
 
 #### 1.1.3.4. `feature/index-navigation`
 

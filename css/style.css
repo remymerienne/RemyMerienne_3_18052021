@@ -1,5 +1,3 @@
-@charset "UTF-8";
-
 *,
 *:before,
 *:after {
@@ -20,17 +18,6 @@ a {
   font-family: "Roboto", sans-serif;
 }
 
-.header__h1 {
-  margin: 0;
-  padding-top: 15px;
-  padding-bottom: 5px;
-  background-color: #ffffff;
-  font-family: "Shrikhand", serif;
-  font-size: 31px;
-  font-weight: lighter;
-  text-align: center;
-}
-
 .container {
   display: flex;
   align-items: center;
@@ -41,7 +28,7 @@ a {
 
 .page {
   width: 375px;
-  height: 1200px;
+  height: 1500px;
   border: 1px solid black;
 }
 
@@ -64,6 +51,16 @@ a {
 .header {
   height: 400px;
   background-color: #f6f6f6;
+}
+.header__h1 {
+  margin: 0;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  background-color: #ffffff;
+  font-family: "Shrikhand", serif;
+  font-size: 31px;
+  font-weight: lighter;
+  text-align: center;
 }
 .header__h2 {
   margin: 35px 50px 5px 50px;
@@ -94,6 +91,14 @@ a {
   margin-left: 16px;
 }
 
+.information__h3 {
+  margin-bottom: 5px;
+  margin-top: 45px;
+  margin-left: 17px;
+  font-size: 24px;
+  font-weight: 500;
+}
+
 .bloc-step {
   width: 375px;
 }
@@ -104,7 +109,7 @@ a {
   justify-content: center;
   width: 24px;
   height: 24px;
-  top: 48px;
+  top: 51px;
   left: 17px;
   border-radius: 50px;
   background-color: #9256dc;
@@ -116,7 +121,7 @@ a {
   display: flex;
   align-items: center;
   width: 320px;
-  height: 70px;
+  height: 75px;
   margin: auto;
   box-shadow: 0 3px 10px 1px #e7e6e6;
   border-radius: 20px;
@@ -145,5 +150,4 @@ a {
   color: #9256dc;
 }
 
-/* *. End
----------------------------*/
+/*# sourceMappingURL=style.css.map */
