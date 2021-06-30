@@ -18,17 +18,6 @@ a {
   font-family: "Roboto", sans-serif;
 }
 
-.header__h1 {
-  margin: 0;
-  padding-top: 15px;
-  padding-bottom: 5px;
-  background-color: #ffffff;
-  font-family: "Shrikhand", serif;
-  font-size: 31px;
-  font-weight: lighter;
-  text-align: center;
-}
-
 .container {
   display: flex;
   align-items: center;
@@ -39,7 +28,7 @@ a {
 
 .page {
   width: 375px;
-  height: 800px;
+  height: 1500px;
   border: 1px solid black;
 }
 
@@ -63,6 +52,16 @@ a {
   height: 400px;
   background-color: #f6f6f6;
 }
+.header__h1 {
+  margin: 0;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  background-color: #ffffff;
+  font-family: "Shrikhand", serif;
+  font-size: 31px;
+  font-weight: lighter;
+  text-align: center;
+}
 .header__h2 {
   margin: 35px 50px 5px 50px;
   font-size: 24px;
@@ -82,14 +81,73 @@ a {
   box-shadow: inset 0px 4px 5px -3px #afacac;
   background-color: #eaeaea;
 }
-.search__p {
-  font-size: 16px;
-  margin-left: 16px;
-}
 .search__icon {
   font-size: 16px;
   margin-bottom: 6px;
   margin-left: 103px;
+}
+.search__p {
+  font-size: 16px;
+  margin-left: 16px;
+}
+
+.information__h3 {
+  margin-bottom: 5px;
+  margin-top: 45px;
+  margin-left: 17px;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.bloc-step {
+  width: 375px;
+}
+.bloc-step__number {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  top: 51px;
+  left: 17px;
+  border-radius: 50px;
+  background-color: #9256dc;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  width: 320px;
+  height: 75px;
+  margin: auto;
+  box-shadow: 0 3px 10px 1px #e7e6e6;
+  border-radius: 20px;
+  background-color: #f6f6f6;
+}
+.step__icon {
+  margin-left: 35px;
+  color: #808080;
+}
+.step__p {
+  font-weight: 500;
+}
+.step--pink {
+  background-color: #f5edff;
+}
+.step .fa-mobile-alt {
+  margin-right: 30px;
+  font-size: 21px;
+}
+.step .fa-list-ul {
+  margin-right: 24px;
+  font-size: 19px;
+}
+.step .fa-store {
+  margin-right: 23px;
+  color: #9256dc;
 }
 
 /*# sourceMappingURL=style.css.map */
