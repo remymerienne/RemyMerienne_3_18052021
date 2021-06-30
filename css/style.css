@@ -28,7 +28,7 @@ a {
 
 .page {
   width: 375px;
-  height: 1500px;
+  height: 2000px;
   border: 1px solid black;
 }
 
@@ -77,32 +77,35 @@ a {
 
 .search {
   display: flex;
+  justify-content: center;
   align-items: center;
   box-shadow: inset 0px 4px 5px -3px #afacac;
   background-color: #eaeaea;
 }
 .search__icon {
-  font-size: 16px;
   margin-bottom: 6px;
-  margin-left: 103px;
+  margin-right: 20px;
 }
 .search__p {
-  font-size: 16px;
-  margin-left: 16px;
+  font-size: 17px;
 }
 
-.information__h3 {
+.operation {
+  width: 375px;
+  margin: auto;
+}
+.operation__h3 {
   margin-bottom: 5px;
   margin-top: 45px;
   margin-left: 17px;
   font-size: 24px;
   font-weight: 500;
 }
-
-.bloc-step {
+.operation-step {
   width: 375px;
+  margin: auto;
 }
-.bloc-step__number {
+.operation-step__number {
   position: relative;
   display: flex;
   align-items: center;
@@ -116,8 +119,7 @@ a {
   color: #ffffff;
   font-size: 14px;
 }
-
-.step {
+.operation-step__action {
   display: flex;
   align-items: center;
   width: 320px;
@@ -127,27 +129,78 @@ a {
   border-radius: 20px;
   background-color: #f6f6f6;
 }
-.step__icon {
+.operation-step__action .fas {
   margin-left: 35px;
   color: #808080;
 }
-.step__p {
+.operation-step__action p {
   font-weight: 500;
 }
-.step--pink {
+.operation-step__action--pink {
   background-color: #f5edff;
 }
-.step .fa-mobile-alt {
+.operation-step__action .fa-mobile-alt {
   margin-right: 30px;
   font-size: 21px;
 }
-.step .fa-list-ul {
+.operation-step__action .fa-list-ul {
   margin-right: 24px;
   font-size: 19px;
 }
-.step .fa-store {
+.operation-step__action .fa-store {
   margin-right: 23px;
   color: #9256dc;
+}
+
+.resto {
+  width: 335px;
+  height: 250px;
+  margin: auto;
+  overflow: hidden;
+  box-shadow: 0 3px 10px 1px #e7e6e6;
+  border-radius: 15px;
+}
+.resto-picture {
+  height: 170px;
+  background-color: #f5edff;
+  background-image: url("../images/la-palette-du-gout.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.resto-picture__new {
+  position: relative;
+  width: 80px;
+  height: 27px;
+  left: 240px;
+  top: 13px;
+  background-color: #99e2d0;
+}
+.resto-picture__new p {
+  margin: 0;
+  padding-top: 5px;
+  text-align: center;
+  color: #008766;
+  font-size: 14px;
+}
+.resto-description {
+  display: flex;
+  justify-content: space-between;
+  margin: 16px 25px 0 15px;
+}
+.resto-description__detail h4 {
+  margin: 0 0 5px 0;
+  font-size: 18px;
+  font-weight: 500;
+}
+.resto-description__detail p {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 300;
+}
+.resto-description__icon {
+  margin-top: 5px;
+  font-size: 23px;
 }
 
 /*# sourceMappingURL=style.css.map */

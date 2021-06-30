@@ -94,7 +94,7 @@
 
 #### 1.1.3.4. `feature/index-navigation`
 
-- \[FEAT\]nav(#11): develop the thumbnail template ***`open`***
+- \[FEAT\]nav(#11): develop the thumbnail template ***`close`***
 
 - \[FEAT\]nav(#12): integrate the four thumbnails ***`open`***
 

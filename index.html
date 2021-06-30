@@ -15,7 +15,6 @@
 <body>
   <div class="container">
     <div class="page">
-
       <!-- Header -->
       <header class="header">
         <h1 class="header__h1">ohmyfood</h1>
@@ -34,66 +33,68 @@
         <!-- Button END-->
       </header>
       <!-- Header END -->
-
       <main>
-
-        <!-- Section-information -->
-        <section class="information">
-          <h3 class="information__h3">Fonctionnement</h3>
+        <!-- Section-operation -->
+        <section class="operation">
+          <h3 class="operation__h3">Fonctionnement</h3>
           <!-- Step-module-N°1 -->
-          <div class="bloc-step">
-            <div class="bloc-step__number">
+          <div class="operation-step">
+            <div class="operation-step__number">
               <p>1</p>
             </div>
-            <div class="step">
-              <span class="step__icon fas fa-mobile-alt"></span>
-              <p class="step__p">Choisissez un restaurant</p>
+            <div class="operation-step__action">
+              <span class="fas fa-mobile-alt"></span>
+              <p>Choisissez un restaurant</p>
             </div>
           </div>
           <!-- Step-module-N°1 END -->
           <!-- Step-module-N°2 -->
-          <div class="bloc-step">
-            <div class="bloc-step__number">
+          <div class="operation-step">
+            <div class="operation-step__number">
               <p>2</p>
             </div>
-            <div class="step">
-              <span class="step__icon fas fa-list-ul"></span>
-              <p class="step__p">Composez votre menu</p>
+            <div class="operation-step__action">
+              <span class="fas fa-list-ul"></span>
+              <p>Composez votre menu</p>
             </div>
           </div>
           <!-- Step-module-N°2 END -->
           <!-- Step-module-N°3 -->
-          <div class="bloc-step">
-            <div class="bloc-step__number">
+          <div class="operation-step">
+            <div class="operation-step__number">
               <p>3</p>
             </div>
-            <div class="step step--pink">
-              <span class="step__icon fas fa-store"></span>
-              <p class="step__p">Dégustez au restaurant</p>
+            <div class="operation-step__action operation-step__action--pink">
+              <span class="fas fa-store"></span>
+              <p>Dégustez au restaurant</p>
             </div>
           </div>
           <!-- Step-module-N°3 END -->
         </section>
-        <!-- Section-information END-->
-
+        <!-- Section-operation END-->
+        <!-- Navigation -->
         <nav>
           <h3>Restaurants</h3>
-          <div class="menu-1"><a href="menu_1.html">
-              <h4>resto1</h4>
-            </a></div>
-          <div class="menu-2"><a href="#">
-              <h4>resto2</h4>
-            </a></div>
-          <div class="menu-3"><a href="#">
-              <h4>resto3</h4>
-            </a></div>
-          <div class="menu-4"><a href="#">
-              <h4>resto4</h4>
-            </a></div>
+          <!-- Restaurant-module -->
+          <div class="resto">
+            <div class="resto-picture">
+              <div class="resto-picture__new">
+                <p>Nouveau</p>
+              </div>
+            </div>
+            <div class="resto-description">
+              <div class="resto-description__detail">
+                <h4>La palette du goût</h4>
+                <p>Ménilmontant</p>
+              </div>
+              <span class="resto-description__icon far fa-heart"></span>
+            </div>
+          </div>
+          <!-- Restaurant-module END -->
         </nav>
-
+        <!-- Navigation END -->
       </main>
-
+      <!-- Footer -->
       <footer>
         <h3>ohmyfood</h3>
         <h4>Proposer un restaurant</h4>
@@ -101,7 +102,7 @@
         <h4>Mentions légales</h4>
         <h4>Contact</h4>
       </footer>
-
+      <!-- Footer END -->
     </div>
   </div>
 </body>
