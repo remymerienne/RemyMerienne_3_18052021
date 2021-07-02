@@ -155,7 +155,7 @@ a {
 .resto {
   width: 335px;
   height: 250px;
-  margin: auto;
+  margin: 0 auto 20px auto;
   overflow: hidden;
   box-shadow: 0 3px 10px 1px #e7e6e6;
   border-radius: 15px;
@@ -163,10 +163,22 @@ a {
 .resto-picture {
   height: 170px;
   background-color: #f5edff;
-  background-image: url("../images/la-palette-du-gout.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center bottom;
+}
+.resto-picture--one {
+  background-image: url("../images/la-palette-du-gout.jpg");
+}
+.resto-picture--two {
+  background-image: url("../images/la-note-enchantee.jpg");
   background-position: center;
+}
+.resto-picture--three {
+  background-image: url("../images/a-la-francaise.jpg");
+}
+.resto-picture--four {
+  background-image: url("../images/le-delice-des-sens.jpg");
 }
 .resto-picture__new {
   position: relative;
