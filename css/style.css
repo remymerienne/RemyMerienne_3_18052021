@@ -18,6 +18,34 @@ a {
   font-family: "Roboto", sans-serif;
 }
 
+.footer {
+  height: 195px;
+  padding-left: 25px;
+  background-color: #363636;
+  color: white;
+}
+.footer__h3 {
+  margin: 0;
+  padding: 19px 0;
+  font-family: "Shrikhand", serif;
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+.footer-line {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.footer-line .fas {
+  margin-right: 10px;
+  font-size: 13px;
+}
+.footer-line__h4 {
+  margin: 0;
+  font-weight: 300;
+}
+
 .container {
   display: flex;
   align-items: center;
@@ -28,8 +56,6 @@ a {
 
 .page {
   width: 375px;
-  height: 2500px;
-  border: 1px solid black;
 }
 
 .button {
