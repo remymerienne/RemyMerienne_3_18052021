@@ -98,11 +98,11 @@
 
 - \[FEAT\]nav(#12): integrate the four thumbnails ***`close`***
 
-- \[FEAT\]nav(#13): do general layout of navigation ***`open`***
+- \[FEAT\]nav(#13): do general layout of navigation ***`close`***
 
 #### 1.1.3.5. `feature/footer`
 
-- \[FEAT\]footer(#14): add footer ***`open`***
+- \[FEAT\]footer(#14): add footer ***`close`***
 
 #### 1.1.3.6. `feature/index`
 
