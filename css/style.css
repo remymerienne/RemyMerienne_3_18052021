@@ -1,23 +1,26 @@
+@charset "UTF-8";
+
+.operation-step__number, .search, .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 *,
 *:before,
 *:after {
   box-sizing: border-box;
 }
-
 body {
   margin: 0;
   padding: 0;
 }
-
 a {
   text-decoration: none;
   color: inherit;
 }
-
 * {
   font-family: "Roboto", sans-serif;
 }
-
 .header__h1 {
   margin: 0;
   padding-bottom: 5px;
@@ -28,10 +31,9 @@ a {
   font-weight: lighter;
   text-align: center;
 }
-
 .footer {
   height: 195px;
-  padding-left: 25px;
+  padding-left: 20px;
   background-color: #363636;
   color: white;
 }
@@ -42,7 +44,6 @@ a {
   font-size: 18px;
   font-weight: lighter;
 }
-
 .footer-line {
   display: flex;
   align-items: center;
@@ -57,7 +58,6 @@ a {
   font-size: 16px;
   font-weight: 300;
 }
-
 .container {
   display: flex;
   align-items: center;
@@ -65,15 +65,7 @@ a {
   margin: auto;
   max-width: 1920px;
 }
-
-.page {
-  width: 375px;
-}
-
 .button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 220px;
   height: 50px;
   margin: 0 auto;
@@ -85,7 +77,6 @@ a {
   color: white;
   font-size: 15px;
 }
-
 .introduction {
   height: 340px;
   background-color: whitesmoke;
@@ -102,11 +93,7 @@ a {
   font-weight: 300;
   text-align: center;
 }
-
 .search {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   box-shadow: inset 0px 4px 5px -3px #afacac;
   background-color: #ebebeb;
 }
@@ -117,29 +104,22 @@ a {
 .search__p {
   font-size: 17px;
 }
-
 .operation {
-  width: 375px;
   margin: auto;
 }
 .operation__h2 {
   margin-bottom: 5px;
-  margin-left: 19px;
+  margin-left: 20px;
   margin-top: 45px;
   font-size: 24px;
   font-weight: 500;
 }
-
 .operation-step {
   width: 375px;
   margin: auto;
 }
-
 .operation-step__number {
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 24px;
   height: 24px;
   top: 51px;
@@ -149,7 +129,6 @@ a {
   color: white;
   font-size: 14px;
 }
-
 .operation-step__action {
   display: flex;
   align-items: center;
@@ -182,7 +161,6 @@ a {
   margin-right: 23px;
   color: #9256dc;
 }
-
 .navigation {
   height: 1230px;
   margin-top: 60px;
@@ -190,12 +168,11 @@ a {
 }
 .navigation__h2 {
   margin-bottom: 21px;
-  margin-left: 19px;
+  margin-left: 20px;
   padding-top: 55px;
   font-size: 24px;
   font-weight: 500;
 }
-
 .resto {
   width: 335px;
   height: 250px;
@@ -205,7 +182,6 @@ a {
   border-radius: 15px;
   background-color: white;
 }
-
 .resto-picture {
   height: 170px;
   background-position: center bottom;
@@ -240,7 +216,6 @@ a {
   font-size: 14px;
   text-align: center;
 }
-
 .resto-description {
   display: flex;
   justify-content: space-between;
@@ -260,5 +235,3 @@ a {
   margin-top: 5px;
   font-size: 23px;
 }
-
-/*# sourceMappingURL=style.css.map */
