@@ -7,6 +7,7 @@
   <meta name="description" content="Projet en cours">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Style -->
+  <link rel="stylesheet" type="text/css" href="css/font.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="css/all.css">
 </head>
@@ -14,50 +15,148 @@
 <body>
   <div class="container">
     <div class="page">
-
-      <header>
-        <h1>ohmyfood</h1>
-        <div class="search">Paris, Belleville</div>
-        <h2>Réservez le menu qui vous convient</h2>
-        <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-        <div class="btn">Explorer nos restaurants</div>
+      <!-- Header -->
+      <header class="header">
+        <h1 class="header__h1">ohmyfood</h1>
       </header>
-
+      <!-- Header END -->
       <main>
-
-        <section class="information">
-          <h3>Fonctionnement</h3>
-          <div class="one"></div>
-          <div class="two"></div>
-          <div class="three"></div>
+        <section class="introduction">
+          <!-- Search-module -->
+          <div class="search">
+            <span class="search__icon fas fa-map-marker-alt"></span>
+            <p class="search__p">Paris, Belleville</p>
+          </div>
+          <!-- Search-module END -->
+          <h2 class="introduction__h2">Réservez le menu qui vous convient</h2>
+          <p class="introduction__p">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+          <!-- Button -->
+          <div class="button">
+            <p class="button__p">Explorer nos restaurants</p>
+          </div>
+          <!-- Button END-->
         </section>
-
-        <nav>
-          <h3>Restaurants</h3>
-          <div class="menu-1"><a href="menu_1.html">
-              <h4>resto1</h4>
-            </a></div>
-          <div class="menu-2"><a href="#">
-              <h4>resto2</h4>
-            </a></div>
-          <div class="menu-3"><a href="#">
-              <h4>resto3</h4>
-            </a></div>
-          <div class="menu-4"><a href="#">
-              <h4>resto4</h4>
-            </a></div>
+        <!-- Section-operation -->
+        <section class="operation">
+          <h2 class="operation__h2">Fonctionnement</h2>
+          <!-- Step-module-N°1 -->
+          <div class="operation-step">
+            <div class="operation-step__number">
+              <p>1</p>
+            </div>
+            <div class="operation-step__action">
+              <span class="fas fa-mobile-alt"></span>
+              <p>Choisissez un restaurant</p>
+            </div>
+          </div>
+          <!-- Step-module-N°1 END -->
+          <!-- Step-module-N°2 -->
+          <div class="operation-step">
+            <div class="operation-step__number">
+              <p>2</p>
+            </div>
+            <div class="operation-step__action">
+              <span class="fas fa-list-ul"></span>
+              <p>Composez votre menu</p>
+            </div>
+          </div>
+          <!-- Step-module-N°2 END -->
+          <!-- Step-module-N°3 -->
+          <div class="operation-step">
+            <div class="operation-step__number">
+              <p>3</p>
+            </div>
+            <div class="operation-step__action operation-step__action--pink">
+              <span class="fas fa-store"></span>
+              <p>Dégustez au restaurant</p>
+            </div>
+          </div>
+          <!-- Step-module-N°3 END -->
+        </section>
+        <!-- Section-operation END-->
+        <!-- Navigation -->
+        <nav class="navigation">
+          <h2 class="navigation__h2">Restaurants</h2>
+          <!-- Restaurant-module-1 -->
+          <div class="resto">
+            <div class="resto-picture resto-picture--one">
+              <div class="resto-picture__new">
+                <p>Nouveau</p>
+              </div>
+            </div>
+            <div class="resto-description">
+              <div class="resto-description__detail">
+                <h3>La palette du goût</h3>
+                <p>Ménilmontant</p>
+              </div>
+              <span class="resto-description__icon far fa-heart"></span>
+            </div>
+          </div>
+          <!-- Restaurant-module-1 END -->
+          <!-- Restaurant-module-2 -->
+          <div class="resto">
+            <div class="resto-picture resto-picture--two">
+              <div class="resto-picture__new">
+                <p>Nouveau</p>
+              </div>
+            </div>
+            <div class="resto-description">
+              <div class="resto-description__detail">
+                <h3>La note enchantée</h3>
+                <p>Charonne</p>
+              </div>
+              <span class="resto-description__icon far fa-heart"></span>
+            </div>
+          </div>
+          <!-- Restaurant-module-2 END -->
+          <!-- Restaurant-module-3 -->
+          <div class="resto">
+            <div class="resto-picture resto-picture--three">
+            </div>
+            <div class="resto-description">
+              <div class="resto-description__detail">
+                <h3>&Agrave; la française</h3>
+                <p>Cité Rouge</p>
+              </div>
+              <span class="resto-description__icon far fa-heart"></span>
+            </div>
+          </div>
+          <!-- Restaurant-module-3 END -->
+          <!-- Restaurant-module-4 -->
+          <div class="resto">
+            <div class="resto-picture resto-picture--four">
+            </div>
+            <div class="resto-description">
+              <div class="resto-description__detail">
+                <h3>Le délice des sens</h3>
+                <p>Folie-Méricourt</p>
+              </div>
+              <span class="resto-description__icon far fa-heart"></span>
+            </div>
+          </div>
+          <!-- Restaurant-module-4 END -->
         </nav>
-
+        <!-- Navigation END -->
       </main>
-
-      <footer>
-        <h3>ohmyfood</h3>
-        <h4>Proposer un restaurant</h4>
-        <h4>Devenir partenaire</h4>
-        <h4>Mentions légales</h4>
-        <h4>Contact</h4>
+      <!-- Footer -->
+      <footer class="footer">
+        <h2 class="footer__h2">ohmyfood</h2>
+        <div class="footer-line">
+          <span class="fas fa-utensils"></span>
+          <h3 class="footer-line__h3">Proposer un restaurant</h3>
+        </div>
+        <div class="footer-line">
+          <span class="fas fa-hands-helping"></span>
+          <h3 class="footer-line__h3">Devenir partenaire</h3>
+        </div>
+        <div class="footer-line">
+          <h3 class="footer-line__h3">Mentions légales</h3>
+        </div>
+        <div class="footer-line">
+          <h3 class="footer-line__h3">Contact</h3>
+        </div>
       </footer>
-
+      <!-- Footer END -->
     </div>
   </div>
 </body>
