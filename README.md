@@ -5,11 +5,11 @@
     - [1.1.1. Découpage sémantique](#111-découpage-sémantique)
     - [1.1.2. Heading-level outline](#112-heading-level-outline)
     - [1.1.3. Découpage des tâches](#113-découpage-des-tâches)
-      - [1.1.3.1. Répartirion des parties du site par `feature`](#1131-répartirion-des-parties-du-site-par-feature)
+      - [1.1.3.1. Développement des éléments du site par `feature`](#1131-développement-des-éléments-du-site-par-feature)
       - [1.1.3.2. Commits réalisés par branche (GitKraken)](#1132-commits-réalisés-par-branche-gitkraken)
     - [1.1.4. SASS](#114-sass)
     - [1.1.5. `release/v0.2.0`](#115-releasev020)
-  - [1.2. ***Menu 1***](#12-menu-1)
+  - [1.2. ***Menu***](#12-menu)
     - [1.2.1. Découpage sémantique](#121-découpage-sémantique)
     - [1.2.2. Heading-level outline](#122-heading-level-outline)
     - [1.2.3. Découpage des tâches](#123-découpage-des-tâches)
@@ -90,7 +90,7 @@
 
 ### 1.1.3. Découpage des tâches
 
-#### 1.1.3.1. Répartirion des parties du site par `feature`
+#### 1.1.3.1. Développement des éléments du site par `feature`
 
 Chaque partie de l'accueil a été développée dans sa propre branche _Git-flow_
 
@@ -112,8 +112,8 @@ Chaque partie de l'accueil a été développée dans sa propre branche _Git-flow
 
 ### 1.1.4. SASS
 
-La feuille de style CSS a été générée par ***Sass***.  
-Ci-dessous, les différents fichiers contenant le code _"scss"_ et compilés vers _"style.css"_
+La feuille de style _index.css_ a été générée par ***Sass***.  
+Ci-dessous, les différents fichiers contenant le code _"scss"_ et compilés vers _"index.css"_
 
 ```scss
 @charset "UTF-8";
@@ -124,6 +124,7 @@ Ci-dessous, les différents fichiers contenant le code _"scss"_ et compilés ver
 
 @import
   'base/base',
+  'base/fonts',
   'base/typography';
 
 @import
@@ -142,47 +143,50 @@ Ci-dessous, les différents fichiers contenant le code _"scss"_ et compilés ver
 
 ### 1.1.5. `release/v0.2.0`
 
-Version non responsive de l'accueil (IPhone 8, 375px) et sans effet.
+Version non responsive de l'accueil (optimisée IPhone 8, 375px) et sans effet.
 
-## 1.2. ***Menu 1***
+## 1.2. ***Menu***
 
 ### 1.2.1. Découpage sémantique
 
 ```html
+<!-- Header -->
 <header>
   <h1>ohmyfood</h1>
 </header>
+<!-- Header END -->
 
 <main>
 
   <section class="menu">
 
-    <header class="menu__header">  
-      <h2>&Agrave; la française</h2>
+    <!-- Menu-header -->
+    <header>
+      <h2>A la française</h2>
     </header>
+    <!-- Menu-header END-->
 
-    <section class="stage">
-      <h3>ENTR&Eacute;ES</h3>
+    <section>
+      <h3>ENTREES</h3>
     </section>
 
-    <section class="stage">
+    <section>
       <h3>PLATS</h3>
     </section>
 
-    <section class="stage">
+    <section>
       <h3>DESSERTS</h3>
     </section>
+
+    <!-- Button -->
+    <!-- Button END-->
 
   </section>
 
 </main>
 
 <footer>
-  <h3>ohmyfood</h3>
-  <h4>Proposer un restaurant</h4>
-  <h4>Devenir partenaire</h4>
-  <h4>Mentions légales</h4>
-  <h4>Contact</h4>
+  <h2>ohmyfood</h2>
 </footer>
 ```
 
@@ -194,23 +198,23 @@ Version non responsive de l'accueil (IPhone 8, 375px) et sans effet.
 
 #### 1.2.3.1. `feature/menu-header`
 
-- \[FEAT\]header(18#): add page's headers _`close`_
+- \[FEAT\]header(18#): add page's headers ***`close`***
 
 #### 1.2.3.2. `feature/menu-stage-section`
 
-- \[FEAT\]section(#): develop the dish template
+- \[FEAT\]section(#21): develop the dish template
 
-- \[FEAT\]section(#): integrate three stages
+- \[FEAT\]section(#22): integrate three stages
 
-- \[FEAT\]section(#): do general layout of section
+- \[FEAT\]section(#23): do general layout of section
 
 #### 1.2.3.3. `feature/menu`
 
-- \[FEAT\](#): add bnt and footer
+- \[FEAT\](#24): add bnt and footer
 
-- \[FEAT\](#): do general layout of page
+- \[FEAT\](#25): do general layout of page
 
-- \[REFACTOR\](#): clean code
+- \[REFACTOR\](#26): clean code
 
 ## 1.3. `release/v1.1.0`
 
