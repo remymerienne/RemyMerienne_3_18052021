@@ -1,0 +1,133 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+.header__h1 {
+  margin: 0;
+  padding-bottom: 5px;
+  padding-top: 12px;
+  background-color: white;
+  font-family: "Shrikhand", serif;
+  font-size: 30px;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.footer {
+  height: 195px;
+  padding-left: 20px;
+  background-color: #363636;
+  color: white;
+}
+.footer__h2 {
+  margin: 0;
+  padding: 19px 0;
+  font-family: "Shrikhand", serif;
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+.footer-line {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.footer-line .fas {
+  margin-right: 10px;
+  font-size: 13px;
+}
+.footer-line__h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  max-width: 1920px;
+}
+
+.button {
+  width: 220px;
+  height: 50px;
+  margin: 0 auto;
+  box-shadow: 0 3px 10px 1px #afacac;
+  border-radius: 50px;
+  background: linear-gradient(to bottom right, #ff7ad9, #9256dc);
+}
+.button__p {
+  color: white;
+  font-size: 15px;
+}
+
+.header {
+  width: 375px;
+  display: flex;
+  align-items: center;
+}
+.header__icon {
+  margin-left: 25px;
+  color: #363636;
+  font-size: 19px;
+}
+.header__h1 {
+  margin-left: 65px;
+}
+
+.menu-header {
+  height: 280px;
+  background-image: url("../images/a-la-francaise.jpg");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.menu-header__banner {
+  position: relative;
+  top: 223px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  background-color: whitesmoke;
+}
+.menu-header__banner h2 {
+  margin-left: 20px;
+  margin-top: 40px;
+  font-family: "Shrikhand", serif;
+  font-size: 27px;
+  font-weight: lighter;
+}
+.menu-header__banner .fa-heart {
+  margin-right: 35px;
+  margin-top: 15px;
+  font-size: 25px;
+}
+
+/*# sourceMappingURL=menu.css.map */
