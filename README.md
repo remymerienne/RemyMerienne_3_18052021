@@ -14,9 +14,8 @@
     - [1.2.2. Heading-level outline](#122-heading-level-outline)
     - [1.2.3. Découpage des tâches](#123-découpage-des-tâches)
       - [1.2.3.1. `feature/menu-header`](#1231-featuremenu-header)
-      - [1.2.3.2. `feature/menu-section-header`](#1232-featuremenu-section-header)
-      - [1.2.3.3. `feature/menu-stage-section`](#1233-featuremenu-stage-section)
-      - [1.2.3.4. `feature/menu`](#1234-featuremenu)
+      - [1.2.3.2. `feature/menu-stage-section`](#1232-featuremenu-stage-section)
+      - [1.2.3.3. `feature/menu`](#1233-featuremenu)
   - [1.3. `release/v1.1.0`](#13-releasev110)
   - [1.4. Effets `feature/effects`](#14-effets-featureeffects)
   - [1.5. `release/v1.2.0`](#15-releasev120)
@@ -195,16 +194,9 @@ Version non responsive de l'accueil (IPhone 8, 375px) et sans effet.
 
 #### 1.2.3.1. `feature/menu-header`
 
-- \[FEAT\]header(#): add h1 title and back arrow 
+- \[FEAT\]header(18#): add page's headers _`close`_
 
-#### 1.2.3.2. `feature/menu-section-header`
-
-- \[FEAT\]section(#): add h2 title and heart  
-    Don't forget top border radius.
-
-- \[FEAT\]section(#): add background and layout
-
-#### 1.2.3.3. `feature/menu-stage-section`
+#### 1.2.3.2. `feature/menu-stage-section`
 
 - \[FEAT\]section(#): develop the dish template
 
@@ -212,7 +204,7 @@ Version non responsive de l'accueil (IPhone 8, 375px) et sans effet.
 
 - \[FEAT\]section(#): do general layout of section
 
-#### 1.2.3.4. `feature/menu`
+#### 1.2.3.3. `feature/menu`
 
 - \[FEAT\](#): add bnt and footer
 
