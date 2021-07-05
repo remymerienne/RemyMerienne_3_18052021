@@ -14,7 +14,7 @@
     - [1.2.2. Heading-level outline](#122-heading-level-outline)
     - [1.2.3. Découpage des tâches](#123-découpage-des-tâches)
       - [1.2.3.1. `feature/menu-header`](#1231-featuremenu-header)
-      - [1.2.3.2. `feature/menu-stage-section`](#1232-featuremenu-stage-section)
+      - [1.2.3.2. `feature/menu-stage-section` ***`open`***](#1232-featuremenu-stage-section-open)
       - [1.2.3.3. `feature/menu`](#1233-featuremenu)
   - [1.3. `release/v1.1.0`](#13-releasev110)
   - [1.4. Effets `feature/effects`](#14-effets-featureeffects)
@@ -200,21 +200,21 @@ Version non responsive de l'accueil (optimisée IPhone 8, 375px) et sans effet.
 
 - \[FEAT\]header(18#): add page's headers ***`close`***
 
-#### 1.2.3.2. `feature/menu-stage-section`
+#### 1.2.3.2. `feature/menu-stage-section` ***`open`***
 
-- \[FEAT\]section(#21): develop the dish template
+- \[FEAT\]section: develop the dish template ***`close`***
 
-- \[FEAT\]section(#22): integrate three stages
+- \[FEAT\]section: integrate three stages ***`in-progress`***
 
-- \[FEAT\]section(#23): do general layout of section
+- \[FEAT\]section: do general layout of section
 
 #### 1.2.3.3. `feature/menu`
 
-- \[FEAT\](#24): add bnt and footer
+- \[FEAT\]: add bnt and footer
 
-- \[FEAT\](#25): do general layout of page
+- \[FEAT\]: do general layout of page
 
-- \[REFACTOR\](#26): clean code
+- \[REFACTOR\]: clean code
 
 ## 1.3. `release/v1.1.0`
 
@@ -222,15 +222,15 @@ Publication de _menu_1.html_
 
 ## 1.4. Effets `feature/effects`
 
-- \[FEAT\](#): add effect on btn
+- \[FEAT\]: add effect on btn
 
-- \[FEAT\](#): add effect on heart
+- \[FEAT\]: add effect on heart
 
-- \[FEAT\]menu(#): add slide effect
+- \[FEAT\]menu: add slide effect
 
-- \[FEAT\]menu(#): add effect "hide and show"
+- \[FEAT\]menu: add effect "hide and show"
 
-- \[FEAT\]index(#): add effect "loading spinner"
+- \[FEAT\]index: add effect "loading spinner"
 
 ## 1.5. `release/v1.2.0`
 
