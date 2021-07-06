@@ -13,12 +13,12 @@
     - [1.2.1. Découpage sémantique](#121-découpage-sémantique)
     - [1.2.2. Heading-level outline](#122-heading-level-outline)
     - [1.2.3. Découpage des tâches](#123-découpage-des-tâches)
-      - [1.2.3.1. `feature/menu-header`](#1231-featuremenu-header)
-      - [1.2.3.2. `feature/menu-stage-section` ***`close`***](#1232-featuremenu-stage-section-close)
-      - [1.2.3.3. `feature/menu` ***`open`*** ****************************](#1233-featuremenu-open-)
-  - [1.3. `release/v1.1.0`](#13-releasev110)
+      - [1.2.3.1. Développement des éléments du site par `feature`](#1231-développement-des-éléments-du-site-par-feature)
+      - [1.2.3.2. Commits réalisés par branche (GitKraken)](#1232-commits-réalisés-par-branche-gitkraken)
+    - [1.2.4. SASS](#124-sass)
+  - [1.3. `release/v0.3.0`](#13-releasev030)
   - [1.4. Effets `feature/effects`](#14-effets-featureeffects)
-  - [1.5. `release/v1.2.0`](#15-releasev120)
+  - [1.5. `release/v0.4.0`](#15-releasev040)
 
 ## 1.1. ***Index***
 
@@ -196,27 +196,54 @@ Version non responsive de l'accueil (optimisée IPhone 8, 375px) et sans effet.
 
 ### 1.2.3. Découpage des tâches
 
-#### 1.2.3.1. `feature/menu-header`
+#### 1.2.3.1. Développement des éléments du site par `feature`
 
-- \[FEAT\]header(18#): add page's headers ***`close`***
+Chaque partie du menu "A la française" a été développée comme l'index, dans sa propre branche _Git-flow_
 
-#### 1.2.3.2. `feature/menu-stage-section` ***`close`***
+- `feature/menu-header`
 
-- \[FEAT\]section: develop the dish template ***`close`***
+- `feature/menu-stage-section`
 
-- \[FEAT\]section: integrate three stages ***`close`***
+- `feature/menu`
 
-- \[FEAT\]section: do general layout of section ***`close`***
+####  1.2.3.2. Commits réalisés par branche (GitKraken)
 
-#### 1.2.3.3. `feature/menu` ***`open`*** ****************************
+![Apperçu des branches et des commits sur GitKraken](supply/kraken-menu.png)
 
-- \[FEAT\]: add bnt and footer ***`close`***
+###  1.2.4. SASS
 
-- \[REFACTOR\]: clean code ***`in-progress`***
+La feuille de style _menu.css_ a été générée par ***Sass***.  
+Ci-dessous, les différents fichiers contenant le code _"scss"_ et compilés vers _"menu.css"_
 
-## 1.3. `release/v1.1.0`
+```scss
+@charset "UTF-8";
 
-Publication de _menu_1.html_
+@import
+  'abstracts/variables',
+  'abstracts/placeholders';
+
+@import
+  'base/base',
+  'base/fonts',
+  'base/typography';
+
+@import
+  'layout/header',
+  'layout/footer',
+  'layout/page';
+
+@import
+  'components/button';
+
+@import
+  'pages/menu';
+```
+
+[Chaque fichier _"scss"_ peut être consulté dans le repertoire ***stylesheets***](#)
+
+## 1.3. `release/v0.3.0`
+
+Version non responsive de _menu_3.html_ (optimisée IPhone 8, 375px) et sans effet.
 
 ## 1.4. Effets `feature/effects`
 
@@ -230,6 +257,6 @@ Publication de _menu_1.html_
 
 - \[FEAT\]index: add effect "loading spinner"
 
-## 1.5. `release/v1.2.0`
+## 1.5. `release/v0.4.0`
 
-Publication de _index.html et _menu_1.html_ avec les effets.
+Publication de _index.html et _menu_3.html_ avec les effets.
