@@ -5,21 +5,20 @@
     - [1.1.1. Découpage sémantique](#111-découpage-sémantique)
     - [1.1.2. Heading-level outline](#112-heading-level-outline)
     - [1.1.3. Découpage des tâches](#113-découpage-des-tâches)
-      - [1.1.3.1. Répartirion des parties du site par `feature`](#1131-répartirion-des-parties-du-site-par-feature)
+      - [1.1.3.1. Développement des éléments du site par `feature`](#1131-développement-des-éléments-du-site-par-feature)
       - [1.1.3.2. Commits réalisés par branche (GitKraken)](#1132-commits-réalisés-par-branche-gitkraken)
     - [1.1.4. SASS](#114-sass)
     - [1.1.5. `release/v0.2.0`](#115-releasev020)
-  - [1.2. ***Menu 1***](#12-menu-1)
+  - [1.2. ***Menu***](#12-menu)
     - [1.2.1. Découpage sémantique](#121-découpage-sémantique)
     - [1.2.2. Heading-level outline](#122-heading-level-outline)
     - [1.2.3. Découpage des tâches](#123-découpage-des-tâches)
-      - [1.2.3.1. `feature/menu-header`](#1231-featuremenu-header)
-      - [1.2.3.2. `feature/menu-section-header`](#1232-featuremenu-section-header)
-      - [1.2.3.3. `feature/menu-stage-section`](#1233-featuremenu-stage-section)
-      - [1.2.3.4. `feature/menu`](#1234-featuremenu)
-  - [1.3. `release/v1.1.0`](#13-releasev110)
+      - [1.2.3.1. Développement des éléments du site par `feature`](#1231-développement-des-éléments-du-site-par-feature)
+      - [1.2.3.2. Commits réalisés par branche (GitKraken)](#1232-commits-réalisés-par-branche-gitkraken)
+    - [1.2.4. SASS](#124-sass)
+  - [1.3. `release/v0.3.0`](#13-releasev030)
   - [1.4. Effets `feature/effects`](#14-effets-featureeffects)
-  - [1.5. `release/v1.2.0`](#15-releasev120)
+  - [1.5. `release/v0.4.0`](#15-releasev040)
 
 ## 1.1. ***Index***
 
@@ -73,7 +72,7 @@
     <!-- Restaurant-module-3 -->
     <!-- Restaurant-module-3 END -->
 
-    <!-- Restaurant-module-1 -->
+    <!-- Restaurant-module-4 -->
     <!-- Restaurant-module-4 END -->
 
   </nav>
@@ -91,7 +90,7 @@
 
 ### 1.1.3. Découpage des tâches
 
-#### 1.1.3.1. Répartirion des parties du site par `feature`
+#### 1.1.3.1. Développement des éléments du site par `feature`
 
 Chaque partie de l'accueil a été développée dans sa propre branche _Git-flow_
 
@@ -113,8 +112,8 @@ Chaque partie de l'accueil a été développée dans sa propre branche _Git-flow
 
 ### 1.1.4. SASS
 
-La feuille de style CSS a été générée par ***Sass***.  
-Ci-dessous, les différents fichiers contenant le code _"scss"_ et compilés vers _"style.css"_
+La feuille de style _index.css_ a été générée par ***Sass***.  
+Ci-dessous, les différents fichiers contenant le code _"scss"_ et compilés vers _"index.css"_
 
 ```scss
 @charset "UTF-8";
@@ -125,6 +124,7 @@ Ci-dessous, les différents fichiers contenant le code _"scss"_ et compilés ver
 
 @import
   'base/base',
+  'base/fonts',
   'base/typography';
 
 @import
@@ -143,47 +143,50 @@ Ci-dessous, les différents fichiers contenant le code _"scss"_ et compilés ver
 
 ### 1.1.5. `release/v0.2.0`
 
-Version non responsive de l'accueil (IPhone 8, 375px) et sans effet.
+Version non responsive de l'accueil (optimisée IPhone 8, 375px) et sans effet.
 
-## 1.2. ***Menu 1***
+## 1.2. ***Menu***
 
 ### 1.2.1. Découpage sémantique
 
 ```html
+<!-- Header -->
 <header>
   <h1>ohmyfood</h1>
 </header>
+<!-- Header END -->
 
 <main>
 
   <section class="menu">
 
-    <header class="menu__header">  
-      <h2>&Agrave; la française</h2>
+    <!-- Menu-header -->
+    <header>
+      <h2>A la française</h2>
     </header>
+    <!-- Menu-header END-->
 
-    <section class="stage">
-      <h3>ENTR&Eacute;ES</h3>
+    <section>
+      <h3>ENTREES</h3>
     </section>
 
-    <section class="stage">
+    <section>
       <h3>PLATS</h3>
     </section>
 
-    <section class="stage">
+    <section>
       <h3>DESSERTS</h3>
     </section>
+
+    <!-- Button -->
+    <!-- Button END-->
 
   </section>
 
 </main>
 
 <footer>
-  <h3>ohmyfood</h3>
-  <h4>Proposer un restaurant</h4>
-  <h4>Devenir partenaire</h4>
-  <h4>Mentions légales</h4>
-  <h4>Contact</h4>
+  <h2>ohmyfood</h2>
 </footer>
 ```
 
@@ -193,49 +196,67 @@ Version non responsive de l'accueil (IPhone 8, 375px) et sans effet.
 
 ### 1.2.3. Découpage des tâches
 
-#### 1.2.3.1. `feature/menu-header`
+#### 1.2.3.1. Développement des éléments du site par `feature`
 
-- \[FEAT\]header(#): add h1 title and back arrow 
+Chaque partie du menu "A la française" a été développée comme l'index, dans sa propre branche _Git-flow_
 
-#### 1.2.3.2. `feature/menu-section-header`
+- `feature/menu-header`
 
-- \[FEAT\]section(#): add h2 title and heart  
-    Don't forget top border radius.
+- `feature/menu-stage-section`
 
-- \[FEAT\]section(#): add background and layout
+- `feature/menu`
 
-#### 1.2.3.3. `feature/menu-stage-section`
+####  1.2.3.2. Commits réalisés par branche (GitKraken)
 
-- \[FEAT\]section(#): develop the dish template
+![Apperçu des branches et des commits sur GitKraken](supply/kraken-menu.png)
 
-- \[FEAT\]section(#): integrate three stages
+###  1.2.4. SASS
 
-- \[FEAT\]section(#): do general layout of section
+La feuille de style _menu.css_ a été générée par ***Sass***.  
+Ci-dessous, les différents fichiers contenant le code _"scss"_ et compilés vers _"menu.css"_
 
-#### 1.2.3.4. `feature/menu`
+```scss
+@charset "UTF-8";
 
-- \[FEAT\](#): add bnt and footer
+@import
+  'abstracts/variables',
+  'abstracts/placeholders';
 
-- \[FEAT\](#): do general layout of page
+@import
+  'base/base',
+  'base/fonts',
+  'base/typography';
 
-- \[REFACTOR\](#): clean code
+@import
+  'layout/header',
+  'layout/footer',
+  'layout/page';
 
-## 1.3. `release/v1.1.0`
+@import
+  'components/button';
 
-Publication de _menu_1.html_
+@import
+  'pages/menu';
+```
+
+[Chaque fichier _"scss"_ peut être consulté dans le repertoire ***stylesheets***](#)
+
+## 1.3. `release/v0.3.0`
+
+Version non responsive de _menu_3.html_ (optimisée IPhone 8, 375px) et sans effet.
 
 ## 1.4. Effets `feature/effects`
 
-- \[FEAT\](#): add effect on btn
+- \[FEAT\]: add effect on btn
 
-- \[FEAT\](#): add effect on heart
+- \[FEAT\]: add effect on heart
 
-- \[FEAT\]menu(#): add slide effect
+- \[FEAT\]menu: add slide effect
 
-- \[FEAT\]menu(#): add effect "hide and show"
+- \[FEAT\]menu: add effect "hide and show"
 
-- \[FEAT\]index(#): add effect "loading spinner"
+- \[FEAT\]index: add effect "loading spinner"
 
-## 1.5. `release/v1.2.0`
+## 1.5. `release/v0.4.0`
 
-Publication de _index.html et _menu_1.html_ avec les effets.
+Publication de _index.html et _menu_3.html_ avec les effets.
