@@ -72,7 +72,7 @@
     <!-- Restaurant-module-3 -->
     <!-- Restaurant-module-3 END -->
 
-    <!-- Restaurant-module-1 -->
+    <!-- Restaurant-module-4 -->
     <!-- Restaurant-module-4 END -->
 
   </nav>
@@ -204,9 +204,9 @@ Version non responsive de l'accueil (optimisée IPhone 8, 375px) et sans effet.
 
 - \[FEAT\]section: develop the dish template ***`close`***
 
-- \[FEAT\]section: integrate three stages ***`in-progress`***
+- \[FEAT\]section: integrate three stages ***`close`***
 
-- \[FEAT\]section: do general layout of section
+- \[FEAT\]section: do general layout of section ***`in-progress`***
 
 #### 1.2.3.3. `feature/menu`
 
