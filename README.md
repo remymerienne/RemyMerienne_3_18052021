@@ -14,8 +14,8 @@
     - [1.2.2. Heading-level outline](#122-heading-level-outline)
     - [1.2.3. Découpage des tâches](#123-découpage-des-tâches)
       - [1.2.3.1. `feature/menu-header`](#1231-featuremenu-header)
-      - [1.2.3.2. `feature/menu-stage-section` ***`open`***](#1232-featuremenu-stage-section-open)
-      - [1.2.3.3. `feature/menu`](#1233-featuremenu)
+      - [1.2.3.2. `feature/menu-stage-section` ***`close`***](#1232-featuremenu-stage-section-close)
+      - [1.2.3.3. `feature/menu` ***`open`*** ****************************](#1233-featuremenu-open-)
   - [1.3. `release/v1.1.0`](#13-releasev110)
   - [1.4. Effets `feature/effects`](#14-effets-featureeffects)
   - [1.5. `release/v1.2.0`](#15-releasev120)
@@ -200,17 +200,17 @@ Version non responsive de l'accueil (optimisée IPhone 8, 375px) et sans effet.
 
 - \[FEAT\]header(18#): add page's headers ***`close`***
 
-#### 1.2.3.2. `feature/menu-stage-section` ***`open`***
+#### 1.2.3.2. `feature/menu-stage-section` ***`close`***
 
 - \[FEAT\]section: develop the dish template ***`close`***
 
 - \[FEAT\]section: integrate three stages ***`close`***
 
-- \[FEAT\]section: do general layout of section ***`in-progress`***
+- \[FEAT\]section: do general layout of section ***`close`***
 
-#### 1.2.3.3. `feature/menu`
+#### 1.2.3.3. `feature/menu` ***`open`*** ****************************
 
-- \[FEAT\]: add bnt and footer
+- \[FEAT\]: add bnt and footer ***`in-progress`***
 
 - \[FEAT\]: do general layout of page
 

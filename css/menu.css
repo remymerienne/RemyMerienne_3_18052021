@@ -190,6 +190,7 @@ a {
 }
 
 .menu {
+  height: 1415px;
   background-color: whitesmoke;
 }
 
@@ -226,7 +227,7 @@ a {
 
 .menu-stage__h3 {
   margin-left: 20px;
-  margin-top: 17px;
+  margin-top: 12px;
   font-size: 16px;
   font-weight: 300;
 }
