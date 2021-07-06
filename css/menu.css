@@ -232,9 +232,28 @@ a {
   font-weight: lighter;
 }
 .menu-header__banner .fa-heart {
-  margin-right: 35px;
-  margin-top: 25px;
-  font-size: 24px;
+  position: absolute;
+  margin-left: 84%;
+  margin-top: 28px;
+  font-size: 23px;
+  z-index: 2;
+}
+.menu-header__banner .fa-heart:hover {
+  z-index: 1;
+}
+.menu-header__banner .fa-heart--effect {
+  z-index: 1;
+  color: white;
+  transition-property: color;
+  transition-duration: 1000ms;
+  transition-timing-function: linear;
+}
+.menu-header__banner .fa-heart--effect:hover {
+  z-index: 2;
+  color: transparent;
+  cursor: pointer;
+  background: linear-gradient(to bottom, #9256dc, #ff7ad9);
+  -webkit-background-clip: text;
 }
 
 .menu-stage__h3 {

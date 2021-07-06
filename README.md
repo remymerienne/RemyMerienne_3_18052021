@@ -249,9 +249,9 @@ Version non responsive de _menu_3.html_ (optimisée IPhone 8, 375px) et sans eff
 
 - \[FEAT\]: add effect on btn ***`close`***
 
-- \[FEAT\]: add effect on heart
+- \[FEAT\]: add effect on heart ***`close`***
 
-- \[FEAT\]menu: add slide effect
+- \[FEAT\]menu: add slide effect ***`in-progress`***
 
 - \[FEAT\]menu: add effect "hide and show"
 
