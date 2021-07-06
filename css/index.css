@@ -175,10 +175,22 @@ a {
   box-shadow: 0 3px 10px 1px #afacac;
   border-radius: 50px;
   background: linear-gradient(to bottom right, #ff7ad9, #9256dc);
+  background-color: white;
+  opacity: 1;
 }
 .button__p {
   color: white;
   font-size: 15px;
+}
+.button--effect {
+  transition-property: box-shadow, opacity;
+  transition-duration: 300ms;
+  transition-timing-function: linear;
+}
+.button--effect:hover {
+  box-shadow: 0 3px 10px 1px #706b6b;
+  cursor: pointer;
+  opacity: 0.9;
 }
 
 .introduction {
