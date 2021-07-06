@@ -210,11 +210,9 @@ Version non responsive de l'accueil (optimisée IPhone 8, 375px) et sans effet.
 
 #### 1.2.3.3. `feature/menu` ***`open`*** ****************************
 
-- \[FEAT\]: add bnt and footer ***`in-progress`***
+- \[FEAT\]: add bnt and footer ***`close`***
 
-- \[FEAT\]: do general layout of page
-
-- \[REFACTOR\]: clean code
+- \[REFACTOR\]: clean code ***`in-progress`***
 
 ## 1.3. `release/v1.1.0`
 

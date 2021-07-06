@@ -265,6 +265,12 @@ a {
 }
 .menu-dish .dish-price {
   margin: 0;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.button {
+  margin-top: 50px;
 }
 
 /*# sourceMappingURL=menu.css.map */
