@@ -189,8 +189,13 @@ a {
   font-size: 19px;
 }
 
+.menu {
+  height: 1415px;
+  background-color: whitesmoke;
+}
+
 .menu-header {
-  height: 280px;
+  height: 272px;
   background-image: url("../images/a-la-francaise.jpg");
   background-position: center bottom;
   background-repeat: no-repeat;
@@ -198,7 +203,7 @@ a {
 }
 .menu-header__banner {
   position: relative;
-  top: 223px;
+  top: 218px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -209,15 +214,57 @@ a {
 }
 .menu-header__banner h2 {
   margin-left: 20px;
-  margin-top: 40px;
+  margin-top: 50px;
   font-family: "Shrikhand", serif;
   font-size: 27px;
   font-weight: lighter;
 }
 .menu-header__banner .fa-heart {
   margin-right: 35px;
-  margin-top: 15px;
-  font-size: 25px;
+  margin-top: 25px;
+  font-size: 24px;
+}
+
+.menu-stage__h3 {
+  margin-left: 20px;
+  margin-top: 12px;
+  font-size: 16px;
+  font-weight: 300;
+}
+.menu-stage__h3 .underline {
+  display: inline-block;
+  height: 27px;
+  margin-top: 30px;
+  border-bottom: 3px solid #98e2cf;
+}
+
+.menu-dish {
+  width: 345px;
+  height: 70px;
+  margin: 0 auto 12px auto;
+  box-shadow: 0 3px 10px 1px #e1e0e0;
+  border-radius: 15px;
+  background-color: white;
+}
+.menu-dish__h4 {
+  margin: 0;
+  padding: 10px 0 0 15px;
+  font-size: 18px;
+  font-weight: 400;
+}
+.menu-dish__details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 4px 20px 0 15px;
+}
+.menu-dish .dish-details {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 300;
+}
+.menu-dish .dish-price {
+  margin: 0;
 }
 
 /*# sourceMappingURL=menu.css.map */
