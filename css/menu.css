@@ -231,24 +231,29 @@ a {
   font-size: 27px;
   font-weight: lighter;
 }
-.menu-header__banner .fa-heart {
+
+.fa-heart {
   position: absolute;
   margin-left: 84%;
   margin-top: 28px;
   font-size: 23px;
+}
+
+.fa-heart--effect-w {
   z-index: 2;
 }
-.menu-header__banner .fa-heart:hover {
+.fa-heart--effect-w:hover {
   z-index: 1;
 }
-.menu-header__banner .fa-heart--effect {
+
+.fa-heart--effect {
   z-index: 1;
   color: white;
   transition-property: color;
   transition-duration: 1000ms;
   transition-timing-function: linear;
 }
-.menu-header__banner .fa-heart--effect:hover {
+.fa-heart--effect:hover {
   z-index: 2;
   color: transparent;
   cursor: pointer;
@@ -262,7 +267,7 @@ a {
   font-size: 16px;
   font-weight: 300;
 }
-.menu-stage__h3 .underline {
+.menu-stage__h3--underline {
   display: inline-block;
   height: 27px;
   margin-top: 30px;

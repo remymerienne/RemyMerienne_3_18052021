@@ -356,24 +356,29 @@ a {
   font-size: 17px;
   font-weight: 300;
 }
-.resto-description .fa-heart {
+
+.fa-heart {
   position: absolute;
   margin-left: 270px;
   margin-top: 5px;
   font-size: 23px;
+}
+
+.fa-heart--effect-w {
   z-index: 2;
 }
-.resto-description .fa-heart:hover {
+.fa-heart--effect-w:hover {
   z-index: 1;
 }
-.resto-description .fa-heart--effect {
+
+.fa-heart--effect {
   z-index: 1;
   color: white;
   transition-property: color;
   transition-duration: 1000ms;
   transition-timing-function: linear;
 }
-.resto-description .fa-heart--effect:hover {
+.fa-heart--effect:hover {
   z-index: 2;
   color: transparent;
   cursor: pointer;
