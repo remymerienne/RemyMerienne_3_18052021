@@ -251,11 +251,13 @@ Version non responsive de _menu_3.html_ (optimisée IPhone 8, 375px) et sans eff
 
 - \[FEAT\]: add effect on heart ***`close`***
 
-- \[FEAT\]menu: add slide effect ***`in-progress`***
+- \[FEAT\]menu: add slide effect without rotation and text-overflow ***`close`***
 
-- \[FEAT\]menu: add effect "hide and show"
+- \[FEAT\]menu: add effect "hide and show" ***`close`***
 
-- \[FEAT\]index: add effect "loading spinner"
+- \[FEAT\]menu(#22): add rotation and text-overflow to slide bloc ***`open`***
+
+- \[FEAT\]index: add effect "loading spinner" ***`in-progress`***
 
 ## 1.5. `release/v0.4.0`
 

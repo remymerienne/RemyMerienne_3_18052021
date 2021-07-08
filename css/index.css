@@ -174,20 +174,15 @@ a {
   margin: 0 auto;
   box-shadow: 0 3px 10px 1px #afacac;
   border-radius: 50px;
-  background: linear-gradient(to bottom right, #ff7ad9, #9256dc);
-  background-color: white;
+  background: linear-gradient(to bottom right, #ff7ad9, #9256dc) white;
   opacity: 1;
+  transition: box-shadow 300ms linear, opacity 300ms linear;
 }
 .button__p {
   color: white;
   font-size: 15px;
 }
-.button--effect {
-  transition-property: box-shadow, opacity;
-  transition-duration: 300ms;
-  transition-timing-function: linear;
-}
-.button--effect:hover {
+.button:hover {
   box-shadow: 0 3px 10px 1px #706b6b;
   cursor: pointer;
   opacity: 0.9;
@@ -364,26 +359,23 @@ a {
   font-size: 23px;
 }
 
-.fa-heart--effect-w {
+.icon--effect-first {
   z-index: 2;
 }
-.fa-heart--effect-w:hover {
+.icon--effect-first:hover {
   z-index: 1;
 }
-
-.fa-heart--effect {
+.icon--effect-second {
   z-index: 1;
   color: white;
-  transition-property: color;
-  transition-duration: 1000ms;
-  transition-timing-function: linear;
+  transition: color 500ms linear;
 }
-.fa-heart--effect:hover {
+.icon--effect-second:hover {
   z-index: 2;
-  color: transparent;
-  cursor: pointer;
   background: linear-gradient(to bottom, #9256dc, #ff7ad9);
   -webkit-background-clip: text;
+  color: transparent;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=index.css.map */

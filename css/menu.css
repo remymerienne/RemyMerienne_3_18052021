@@ -231,18 +231,19 @@ a {
   margin-top: 28px;
   font-size: 23px;
 }
-.fa-heart--effect-w {
+
+.icon--effect-first {
   z-index: 2;
 }
-.fa-heart--effect-w:hover {
+.icon--effect-first:hover {
   z-index: 1;
 }
-.fa-heart--effect {
+.icon--effect-second {
   z-index: 1;
   color: white;
   transition: color 500ms linear;
 }
-.fa-heart--effect:hover {
+.icon--effect-second:hover {
   z-index: 2;
   background: linear-gradient(to bottom, #9256dc, #ff7ad9);
   -webkit-background-clip: text;
@@ -318,6 +319,76 @@ a {
   font-size: 22px;
 }
 
+#one {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: hide-show 500ms linear 500ms forwards, slide 500ms linear 500ms forwards;
+}
+
+#two {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: hide-show 500ms linear 800ms forwards, slide 500ms linear 800ms forwards;
+}
+
+#three {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: hide-show 500ms linear 1100ms forwards, slide 500ms linear 1100ms forwards;
+}
+
+#four {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: hide-show 500ms linear 1800ms forwards, slide 500ms linear 1800ms forwards;
+}
+
+#five {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: hide-show 500ms linear 2100ms forwards, slide 500ms linear 2100ms forwards;
+}
+
+#six {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: hide-show 500ms linear 2400ms forwards, slide 500ms linear 2400ms forwards;
+}
+
+#seven {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: hide-show 500ms linear 3100ms forwards, slide 500ms linear 3100ms forwards;
+}
+
+#eight {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: hide-show 500ms linear 3400ms forwards, slide 500ms linear 3400ms forwards;
+}
+
+#nine {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: hide-show 500ms linear 3700ms forwards, slide 500ms linear 3700ms forwards;
+}
+
+@keyframes hide-show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes slide {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 .button {
   margin-top: 50px;
 }
