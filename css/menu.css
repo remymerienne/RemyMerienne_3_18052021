@@ -1,4 +1,4 @@
-.button {
+.dish-slide, .button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -174,20 +174,15 @@ a {
   margin: 0 auto;
   box-shadow: 0 3px 10px 1px #afacac;
   border-radius: 50px;
-  background: linear-gradient(to bottom right, #ff7ad9, #9256dc);
-  background-color: white;
+  background: linear-gradient(to bottom right, #ff7ad9, #9256dc) white;
   opacity: 1;
+  transition: box-shadow 300ms linear, opacity 300ms linear;
 }
 .button__p {
   color: white;
   font-size: 15px;
 }
-.button--effect {
-  transition-property: box-shadow, opacity;
-  transition-duration: 300ms;
-  transition-timing-function: linear;
-}
-.button--effect:hover {
+.button:hover {
   box-shadow: 0 3px 10px 1px #706b6b;
   cursor: pointer;
   opacity: 0.9;
@@ -208,12 +203,10 @@ a {
 
 .menu-header {
   height: 272px;
-  background-image: url("../images/a-la-francaise.jpg");
-  background-position: center bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: url("../images/a-la-francaise.jpg") center bottom/cover no-repeat;
 }
-.menu-header__banner {
+
+.banner {
   position: relative;
   top: 218px;
   display: flex;
@@ -224,7 +217,7 @@ a {
   border-top-right-radius: 40px;
   background-color: whitesmoke;
 }
-.menu-header__banner h2 {
+.banner__h2 {
   margin-left: 20px;
   margin-top: 50px;
   font-family: "Shrikhand", serif;
@@ -238,71 +231,91 @@ a {
   margin-top: 28px;
   font-size: 23px;
 }
-
 .fa-heart--effect-w {
   z-index: 2;
 }
 .fa-heart--effect-w:hover {
   z-index: 1;
 }
-
 .fa-heart--effect {
   z-index: 1;
   color: white;
-  transition-property: color;
-  transition-duration: 1000ms;
-  transition-timing-function: linear;
+  transition: color 500ms linear;
 }
 .fa-heart--effect:hover {
   z-index: 2;
-  color: transparent;
-  cursor: pointer;
   background: linear-gradient(to bottom, #9256dc, #ff7ad9);
   -webkit-background-clip: text;
+  color: transparent;
+  cursor: pointer;
 }
 
-.menu-stage__h3 {
+.stage__h3 {
   margin-left: 20px;
   margin-top: 12px;
   font-size: 16px;
   font-weight: 300;
 }
-.menu-stage__h3--underline {
+.stage__h3--underline {
   display: inline-block;
   height: 27px;
   margin-top: 30px;
   border-bottom: 3px solid #98e2cf;
 }
 
-.menu-dish {
+.dish {
+  display: flex;
   width: 345px;
   height: 70px;
   margin: 0 auto 12px auto;
   box-shadow: 0 3px 10px 1px #e1e0e0;
+  overflow: hidden;
   border-radius: 15px;
   background-color: white;
 }
-.menu-dish__h4 {
+.dish-fixed {
+  width: 345px;
+  cursor: pointer;
+}
+.dish-fixed:hover + .dish-slide {
+  margin: 0;
+}
+.dish-fixed__h4 {
   margin: 0;
   padding: 10px 0 0 15px;
   font-size: 18px;
   font-weight: 400;
 }
-.menu-dish__details {
+.dish-fixed__details {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-between;
-  margin: 4px 20px 0 15px;
+  margin: 5px 20px 0 15px;
 }
-.menu-dish .dish-details {
+.dish-fixed__details-information {
   margin: 0;
   font-size: 15px;
   font-weight: 300;
 }
-.menu-dish .dish-price {
+.dish-fixed__details-price {
   margin: 0;
   font-size: 15px;
   font-weight: 500;
+}
+.dish-slide {
+  width: 80px;
+  height: 70px;
+  margin-right: -80px;
+  background-color: #98e2cf;
+  cursor: pointer;
+  transition: margin 500ms linear;
+}
+.dish-slide:hover {
+  margin: 0;
+}
+.dish-slide__icon {
+  color: white;
+  font-size: 22px;
 }
 
 .button {
