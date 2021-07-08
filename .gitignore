@@ -2,7 +2,6 @@
 note.txt
 .sass-cache/
 dart-sass/
-stylesheets/
 *.css.map
 *.sass.map
 *.scss.map

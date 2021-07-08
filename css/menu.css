@@ -273,6 +273,8 @@ a {
   overflow: hidden;
   border-radius: 15px;
   background-color: white;
+  opacity: 0;
+  transform: translateY(10px);
 }
 .dish-fixed {
   width: 345px;
@@ -320,57 +322,39 @@ a {
 }
 
 #one {
-  opacity: 0;
-  transform: translateY(10px);
   animation: hide-show 500ms linear 500ms forwards, slide 500ms linear 500ms forwards;
 }
 
 #two {
-  opacity: 0;
-  transform: translateY(10px);
   animation: hide-show 500ms linear 800ms forwards, slide 500ms linear 800ms forwards;
 }
 
 #three {
-  opacity: 0;
-  transform: translateY(10px);
   animation: hide-show 500ms linear 1100ms forwards, slide 500ms linear 1100ms forwards;
 }
 
 #four {
-  opacity: 0;
-  transform: translateY(10px);
-  animation: hide-show 500ms linear 1800ms forwards, slide 500ms linear 1800ms forwards;
+  animation: hide-show 500ms linear 1700ms forwards, slide 500ms linear 1700ms forwards;
 }
 
 #five {
-  opacity: 0;
-  transform: translateY(10px);
-  animation: hide-show 500ms linear 2100ms forwards, slide 500ms linear 2100ms forwards;
+  animation: hide-show 500ms linear 2000ms forwards, slide 500ms linear 2000ms forwards;
 }
 
 #six {
-  opacity: 0;
-  transform: translateY(10px);
-  animation: hide-show 500ms linear 2400ms forwards, slide 500ms linear 2400ms forwards;
+  animation: hide-show 500ms linear 2300ms forwards, slide 500ms linear 2300ms forwards;
 }
 
 #seven {
-  opacity: 0;
-  transform: translateY(10px);
-  animation: hide-show 500ms linear 3100ms forwards, slide 500ms linear 3100ms forwards;
+  animation: hide-show 500ms linear 3000ms forwards, slide 500ms linear 3000ms forwards;
 }
 
 #eight {
-  opacity: 0;
-  transform: translateY(10px);
-  animation: hide-show 500ms linear 3400ms forwards, slide 500ms linear 3400ms forwards;
+  animation: hide-show 500ms linear 3300ms forwards, slide 500ms linear 3300ms forwards;
 }
 
 #nine {
-  opacity: 0;
-  transform: translateY(10px);
-  animation: hide-show 500ms linear 3700ms forwards, slide 500ms linear 3700ms forwards;
+  animation: hide-show 500ms linear 3600ms forwards, slide 500ms linear 3600ms forwards;
 }
 
 @keyframes hide-show {

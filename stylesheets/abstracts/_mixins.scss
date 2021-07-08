@@ -1,0 +1,37 @@
+// -----------------------------------------------------------------------------
+// * This file contains all application-wide Sass mixins.
+// -----------------------------------------------------------------------------
+
+/// Gradual onset
+/// @author Rémy Merienne
+/// @require $delay
+/// @param {time} $delay animation execution time (ms)
+@mixin hide-show-slide ($delay) {
+  animation: hide-show 500ms linear $delay forwards, slide 500ms linear $delay forwards;
+}
+
+
+/// Gradient appearance in background of heart
+/// @author Rémy Merienne
+@mixin heart {
+  .icon {
+    &--effect-first {
+      z-index: 2;
+      &:hover {
+        z-index: 1;
+      }
+    }
+    &--effect-second {
+      z-index: 1;
+      color: white;
+      transition: color 500ms linear;
+      &:hover {
+        z-index: 2;
+        background: linear-gradient(to bottom, $primary-color, $secondary-color);
+        -webkit-background-clip: text;
+        color: transparent;
+        cursor: pointer;
+      }
+    }
+  }
+}

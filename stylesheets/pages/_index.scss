@@ -1,0 +1,239 @@
+// -----------------------------------------------------------------------------
+// * This file contains styles that are specific to the home page.
+// -----------------------------------------------------------------------------
+
+// ================MENU================
+// - 1. Section "introduction"
+// - 2. Section "operation"
+// - 3. Nav "navigation"
+// ====================================
+
+// - 1. Section "introduction"
+// --------------------------
+.introduction {
+  height: 340px;
+  background-color: $background-color;
+
+  &__h2 {
+    margin: 35px 50px 0 50px;
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  &__p {
+    margin: 14px 20px 30px 20px;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+  }
+}
+
+// Search module (barre de recherche de localité)
+.search {
+  @extend %flex-all-center;
+  box-shadow: inset 0px 4px 5px -3px $shadow-color;
+  background-color: hsl(0, 0%, 92%);
+
+  &__icon {
+    margin-bottom: 6px;
+    margin-right: 20px;
+  }
+
+  &__p {
+    font-size: 17px;
+  }
+}
+
+// - 2. Section "operation"
+// --------------------------
+.operation {
+  margin: auto;
+
+  &__h2 {
+    margin-bottom: 5px;
+    margin-left: 20px;
+    margin-top: 45px;
+    font-size: 24px;
+    font-weight: 500;
+  }
+}
+
+// Step module (bloc contenant le numero et la vignette d'action)
+.operation-step {
+  width: 375px;
+  margin: auto;
+}
+
+// Numero "rond et violet"
+.operation-step__number {
+  position: relative;
+  @extend %flex-all-center;
+  width: 24px;
+  height: 24px;
+  top: 51px;
+  left: 17px;
+  border-radius: 50px;
+  background-color: $primary-color;
+  color: hsl(0, 0%, 100%);
+  font-size: 14px;
+}
+
+// Vignette d'action
+.operation-step__action {
+  display: flex;
+  align-items: center;
+  width: 320px;
+  height: 75px;
+  margin: auto;
+  box-shadow: 0 3px 10px 1px lighten($shadow-color, $percent-light-shadow);
+  border-radius: 20px;
+  background-color: $background-color;
+
+  // Logo de la vignette
+  .fas {
+    margin-left: 35px;
+    color: hsl(0, 0%, 50%);
+  }
+
+  // Texte de la vignette
+  p {
+    font-weight: 500;
+  }
+
+  // Dernière vignette à fond rose
+  &--pink {
+    background-color: lighten($primary-color, 36%);
+  }
+
+  // Logo "téléphone"
+  .fa-mobile-alt {
+    margin-right: 30px;
+    font-size: 21px;
+  }
+
+  // Logo "liste"
+  .fa-list-ul {
+    margin-right: 24px;
+    font-size: 19px;
+  }
+
+  // Logo "échope"
+  .fa-store {
+    margin-right: 23px;
+    color: $primary-color;
+  }
+}
+
+// - 3. Nav "navigation"
+// --------------------------
+.navigation {
+  height: 1230px;
+  margin-top: 60px;
+  background-color: $background-color;
+
+  &__h2 {
+    margin-bottom: 21px;
+    margin-left: 20px;
+    padding-top: 55px;
+    font-size: 24px;
+    font-weight: 500;
+  }
+}
+
+// Restaurant module
+.resto {
+  width: 335px;
+  height: 250px;
+  margin: 0 auto 20px auto;
+  overflow: hidden;
+  box-shadow: 0 3px 10px 1px lighten($shadow-color, $percent-light-shadow);
+  border-radius: 15px;
+  background-color: hsl(0, 0%, 100%);
+}
+
+// Bloc photo
+.resto-picture {
+  height: 170px;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  // Image resto 1  
+  &--one {
+    background-image: url('../images/la-palette-du-gout.jpg');
+  }
+
+  // Image resto 2
+  &--two {
+    background-image: url('../images/la-note-enchantee.jpg');
+    background-position: center;
+  }
+
+  // Image resto 3
+  &--three {
+    background-image: url('../images/a-la-francaise.jpg');
+  }
+
+  // Image resto 4
+  &--four {
+    background-image: url('../images/le-delice-des-sens.jpg');
+  }
+
+  // Encart "Nouveau"
+  &__new {
+    position: relative;
+    width: 80px;
+    height: 27px;
+    left: 240px;
+    top: 13px;
+    background-color: $tertiary-color;
+
+    p {
+      margin: 0;
+      padding-top: 5px;
+      color: darken($tertiary-color, 40%);
+      font-size: 14px;
+      text-align: center;
+    }
+  }
+}
+
+// Bloc sous la photo
+.resto-description {
+  display: flex;
+  justify-content: space-between;
+  margin: 16px 25px 0 15px;
+
+  // Bloc avec "nom" et "lieu"
+  &__detail {
+
+    // Nom
+    h3 {
+      margin: 0 0 5px 0;
+      font-size: 18px;
+      font-weight: 500;
+    }
+
+    // Lieu
+    p {
+      margin: 0;
+      font-size: 17px;
+      font-weight: 300;
+    }
+  }
+}
+
+// Logo "heart"
+.fa-heart {
+  position: absolute;
+  margin-left: 270px;
+  margin-top: 5px;
+  font-size: 23px;
+}
+
+// Apparition du dégradé dans le coeur
+@include heart;
+
+// *. End
+// * ------------------------

@@ -1,0 +1,19 @@
+// -----------------------------------------------------------------------------
+// * This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+
+.header {
+  &__h1 {
+    margin: 0;
+    padding-bottom: 5px;
+    padding-top: 12px;
+    background-color: hsl(0, 0%, 100%);
+    font-family: $title-font-stack;
+    font-size: 30px;
+    font-weight: lighter;
+    text-align: center;
+  }
+}
+
+// *. End
+// * ------------------------

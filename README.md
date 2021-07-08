@@ -257,7 +257,7 @@ Version non responsive de _menu_3.html_ (optimisée IPhone 8, 375px) et sans eff
 
 - \[FEAT\]menu(#22): add rotation and text-overflow to slide bloc ***`open`***
 
-- \[FEAT\]index: add effect "loading spinner" ***`in-progress`***
+- \[FEAT\]index: add effect "loading spinner"
 
 ## 1.5. `release/v0.4.0`
 

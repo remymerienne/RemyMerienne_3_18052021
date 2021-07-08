@@ -1,0 +1,67 @@
+// -----------------------------------------------------------------------------
+// * This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+// ================MENU================
+// - 1. Lengths
+// - 2. Colors
+// - 3. Fonts
+// ====================================
+
+// - 1. Lengths
+// --------------------------
+
+/// Container's maximum width
+/// @type Length
+$max-width-container: 1920px;
+
+/// Page's maximum width
+/// @type Length
+$max-width-page: 1187px;
+
+// - 2. Colors
+// --------------------------
+
+/// Primary color
+/// @type Color
+$primary-color: hsl(267, 66%, 60%);
+
+/// Secondary color
+/// @type Color
+$secondary-color: hsl(317, 100%, 74%);
+
+/// Tertiary color
+/// @type Color
+$tertiary-color: hsl(165, 56%, 74%);
+
+/// Background color
+/// @type Color
+$background-color: hsl(0, 0%, 96%);
+
+/// Shadow color
+/// @type Color
+$shadow-color: hsl(0, 2%, 68%);
+
+/// Percentage of shadow lightening
+/// @type Percent
+$percent-light-shadow: 20%;
+
+// - 2. Fonts
+// --------------------------
+
+/// Title font family
+/// @type List
+$title-font-stack: (
+  'Shrikhand',
+  serif,
+);
+
+/// Text font family
+/// @type List
+$text-font-stack: (
+  'Roboto',
+  sans-serif,
+);
+
+// *. End
+// * ------------------------
