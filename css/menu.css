@@ -4,6 +4,12 @@
   justify-content: center;
 }
 
+.dish-detail__p, .dish-detail__h4, .dish-detail {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
 *,
 *:before,
 *:after {
@@ -117,12 +123,9 @@ a {
 
 .header__h1 {
   margin: 0;
-  padding-bottom: 5px;
-  padding-top: 12px;
+  padding: 12px 0 5px 0;
   background-color: white;
-  font-family: "Shrikhand", serif;
-  font-size: 30px;
-  font-weight: lighter;
+  font: lighter 30px "Shrikhand", serif;
   text-align: center;
 }
 
@@ -135,17 +138,14 @@ a {
 .footer__h2 {
   margin: 0;
   padding: 19px 0;
-  font-family: "Shrikhand", serif;
-  font-size: 18px;
-  font-weight: lighter;
+  font: lighter 18px "Shrikhand", serif;
 }
-
 .footer-line {
   display: flex;
   align-items: center;
   margin-bottom: 8px;
 }
-.footer-line .fas {
+.footer-line__icon {
   margin-right: 10px;
   font-size: 13px;
 }
@@ -200,64 +200,53 @@ a {
   height: 1415px;
   background-color: whitesmoke;
 }
-
 .menu-header {
   height: 272px;
   background: url("../images/a-la-francaise.jpg") center bottom/cover no-repeat;
 }
-
-.banner {
+.menu-header__banner {
   position: relative;
   top: 218px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 80px;
-  border-top-left-radius: 40px;
-  border-top-right-radius: 40px;
+  border-radius: 40px 40px 0 0;
   background-color: whitesmoke;
 }
-.banner__h2 {
-  margin-left: 20px;
-  margin-top: 50px;
-  font-family: "Shrikhand", serif;
-  font-size: 27px;
-  font-weight: lighter;
+.menu-header__banner h2 {
+  margin: 50px 0 22px 20px;
+  font: lighter 27px "Shrikhand", serif;
 }
-
-.fa-heart {
+.menu-header__banner .fa-heart {
   position: absolute;
-  margin-left: 84%;
-  margin-top: 28px;
+  margin: 28px 0 0 87%;
   font-size: 23px;
 }
-
-.icon--effect-first {
+.menu-header__banner .heart-first {
   z-index: 2;
 }
-.icon--effect-first:hover {
+.menu-header__banner .heart-first:hover {
   z-index: 1;
 }
-.icon--effect-second {
+.menu-header__banner .heart-second {
   z-index: 1;
   color: white;
   transition: color 500ms linear;
 }
-.icon--effect-second:hover {
+.menu-header__banner .heart-second:hover {
   z-index: 2;
   background: linear-gradient(to bottom, #9256dc, #ff7ad9);
   -webkit-background-clip: text;
   color: transparent;
   cursor: pointer;
 }
-
-.stage__h3 {
-  margin-left: 20px;
-  margin-top: 12px;
+.menu-stage__h3 {
+  margin: 12px 0 16px 20px;
   font-size: 16px;
   font-weight: 300;
 }
-.stage__h3--underline {
+.menu-stage__h3--underline {
   display: inline-block;
   height: 27px;
   margin-top: 30px;
@@ -276,49 +265,50 @@ a {
   opacity: 0;
   transform: translateY(10px);
 }
-.dish-fixed {
+.dish-detail {
   width: 345px;
   cursor: pointer;
 }
-.dish-fixed:hover + .dish-slide {
+.dish-detail__h4 {
   margin: 0;
-}
-.dish-fixed__h4 {
-  margin: 0;
-  padding: 10px 0 0 15px;
+  padding: 12px 0 0 15px;
   font-size: 18px;
   font-weight: 400;
 }
-.dish-fixed__details {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  margin: 5px 20px 0 15px;
-}
-.dish-fixed__details-information {
+.dish-detail__p {
   margin: 0;
+  padding: 5px 0 0 15px;
   font-size: 15px;
   font-weight: 300;
 }
-.dish-fixed__details-price {
-  margin: 0;
+.dish-price {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.dish-price__p {
+  margin-right: 20px;
   font-size: 15px;
   font-weight: 500;
 }
 .dish-slide {
-  width: 80px;
+  width: 90px;
   height: 70px;
   margin-right: -80px;
   background-color: #98e2cf;
   cursor: pointer;
   transition: margin 500ms linear;
 }
-.dish-slide:hover {
-  margin: 0;
-}
 .dish-slide__icon {
   color: white;
   font-size: 22px;
+}
+.dish:hover .dish-slide {
+  margin: 0;
+}
+.dish:hover .dish-slide__icon {
+  transform: rotate(360deg);
+  transition: transform 500ms linear;
 }
 
 #one {

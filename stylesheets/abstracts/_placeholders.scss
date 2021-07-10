@@ -9,5 +9,12 @@
   justify-content: center;
 }
 
-// *. End
+/// Text Overflow
+%text-overflow {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+// * End
 // * ------------------------

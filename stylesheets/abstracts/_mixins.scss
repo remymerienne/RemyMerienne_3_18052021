@@ -14,14 +14,14 @@
 /// Gradient appearance in background of heart
 /// @author Rémy Merienne
 @mixin heart {
-  .icon {
-    &--effect-first {
+  .heart {
+    &-first {
       z-index: 2;
       &:hover {
         z-index: 1;
       }
     }
-    &--effect-second {
+    &-second {
       z-index: 1;
       color: white;
       transition: color 500ms linear;
@@ -35,3 +35,6 @@
     }
   }
 }
+
+// * End
+// * ------------------------

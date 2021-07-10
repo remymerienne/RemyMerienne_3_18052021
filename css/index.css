@@ -1,4 +1,4 @@
-.operation-step__number, .search, .button {
+.operation-step__number, .introduction-search, .button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -117,12 +117,9 @@ a {
 
 .header__h1 {
   margin: 0;
-  padding-bottom: 5px;
-  padding-top: 12px;
+  padding: 12px 0 5px 0;
   background-color: white;
-  font-family: "Shrikhand", serif;
-  font-size: 30px;
-  font-weight: lighter;
+  font: lighter 30px "Shrikhand", serif;
   text-align: center;
 }
 
@@ -135,17 +132,14 @@ a {
 .footer__h2 {
   margin: 0;
   padding: 19px 0;
-  font-family: "Shrikhand", serif;
-  font-size: 18px;
-  font-weight: lighter;
+  font: lighter 18px "Shrikhand", serif;
 }
-
 .footer-line {
   display: flex;
   align-items: center;
   margin-bottom: 8px;
 }
-.footer-line .fas {
+.footer-line__icon {
   margin-right: 10px;
   font-size: 13px;
 }
@@ -192,6 +186,16 @@ a {
   height: 340px;
   background-color: whitesmoke;
 }
+.introduction-search {
+  box-shadow: inset 0px 4px 5px -3px #afacac;
+  background-color: #ebebeb;
+}
+.introduction-search__icon {
+  margin: 0 20px 6px 0;
+}
+.introduction-search__p {
+  font-size: 17px;
+}
 .introduction__h2 {
   margin: 35px 50px 0 50px;
   font-size: 24px;
@@ -205,34 +209,18 @@ a {
   text-align: center;
 }
 
-.search {
-  box-shadow: inset 0px 4px 5px -3px #afacac;
-  background-color: #ebebeb;
-}
-.search__icon {
-  margin-bottom: 6px;
-  margin-right: 20px;
-}
-.search__p {
-  font-size: 17px;
-}
-
 .operation {
   margin: auto;
 }
 .operation__h2 {
-  margin-bottom: 5px;
-  margin-left: 20px;
-  margin-top: 45px;
+  margin: 45px 0 5px 20px;
   font-size: 24px;
   font-weight: 500;
 }
-
 .operation-step {
   width: 375px;
   margin: auto;
 }
-
 .operation-step__number {
   position: relative;
   width: 24px;
@@ -244,7 +232,6 @@ a {
   color: white;
   font-size: 14px;
 }
-
 .operation-step__action {
   display: flex;
   align-items: center;
@@ -284,8 +271,7 @@ a {
   background-color: whitesmoke;
 }
 .navigation__h2 {
-  margin-bottom: 21px;
-  margin-left: 20px;
+  margin: 20px 0 21px 20px;
   padding-top: 55px;
   font-size: 24px;
   font-weight: 500;
@@ -300,12 +286,9 @@ a {
   border-radius: 15px;
   background-color: white;
 }
-
 .resto-picture {
   height: 170px;
-  background-position: center bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: center bottom/cover no-repeat;
 }
 .resto-picture--one {
   background-image: url("../images/la-palette-du-gout.jpg");
@@ -335,7 +318,6 @@ a {
   font-size: 14px;
   text-align: center;
 }
-
 .resto-description {
   display: flex;
   justify-content: space-between;
@@ -351,26 +333,23 @@ a {
   font-size: 17px;
   font-weight: 300;
 }
-
-.fa-heart {
+.resto-description .fa-heart {
   position: absolute;
-  margin-left: 270px;
-  margin-top: 5px;
+  margin: 5px 0 0 270px;
   font-size: 23px;
 }
-
-.icon--effect-first {
+.resto-description .heart-first {
   z-index: 2;
 }
-.icon--effect-first:hover {
+.resto-description .heart-first:hover {
   z-index: 1;
 }
-.icon--effect-second {
+.resto-description .heart-second {
   z-index: 1;
   color: white;
   transition: color 500ms linear;
 }
-.icon--effect-second:hover {
+.resto-description .heart-second:hover {
   z-index: 2;
   background: linear-gradient(to bottom, #9256dc, #ff7ad9);
   -webkit-background-clip: text;
