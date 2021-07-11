@@ -17,7 +17,8 @@
       - [1.2.3.2. Commits réalisés par branche (GitKraken)](#1232-commits-réalisés-par-branche-gitkraken)
     - [1.2.4. SASS](#124-sass)
   - [1.3. `release/v0.3.0`](#13-releasev030)
-  - [1.4. Effets `feature/effects` ***`open`***](#14-effets-featureeffects-open)
+  - [1.4. Effets](#14-effets)
+    - [Commits réalisés dans la branche `effects` (GitKraken)](#commits-réalisés-dans-la-branche-effects-gitkraken)
   - [1.5. `release/v0.4.0`](#15-releasev040)
 
 ## 1.1. ***Index***
@@ -120,6 +121,7 @@ Ci-dessous, les différents fichiers contenant le code _"scss"_ et compilés ver
 
 @import
   'abstracts/variables',
+  'abstracts/mixins',
   'abstracts/placeholders';
 
 @import
@@ -133,7 +135,8 @@ Ci-dessous, les différents fichiers contenant le code _"scss"_ et compilés ver
   'layout/page';
 
 @import
-  'components/button';
+  'components/button',
+  'components/loader';
 
 @import
   'pages/index';
@@ -220,6 +223,7 @@ Ci-dessous, les différents fichiers contenant le code _"scss"_ et compilés ver
 
 @import
   'abstracts/variables',
+  'abstracts/mixins',
   'abstracts/placeholders';
 
 @import
@@ -236,28 +240,20 @@ Ci-dessous, les différents fichiers contenant le code _"scss"_ et compilés ver
   'components/button';
 
 @import
-  'pages/menu';
+  'pages/menu'
 ```
 
-[Chaque fichier _"scss"_ peut être consulté dans le repertoire ***stylesheets***](#)
+Chaque fichier _"scss"_ peut être consulté dans le repertoire [***stylesheets***](stylesheets/)
 
 ## 1.3. `release/v0.3.0`
 
 Version non responsive de _menu_3.html_ (optimisée IPhone 8, 375px) et sans effet.
 
-## 1.4. Effets `feature/effects` ***`open`***
+## 1.4. Effets
 
-- \[FEAT\]: add effect on btn ***`close`***
+### Commits réalisés dans la branche `effects` (GitKraken)
 
-- \[FEAT\]: add effect on heart ***`close`***
-
-- \[FEAT\]menu: add slide effect without rotation and text-overflow ***`close`***
-
-- \[FEAT\]menu: add effect "hide and show" ***`close`***
-
-- \[FEAT\]menu(#22): add rotation and text-overflow to slide bloc ***`close`***
-
-- \[FEAT\]index: add effect "loading spinner" ***`close`***
+![Apperçu des branches et des commits sur GitKraken](supply/kraken-effects.png)
 
 ## 1.5. `release/v0.4.0`
 
