@@ -1,4 +1,4 @@
-.operation-step__number, .introduction-search, .button {
+.operation-step__number, .introduction-search, .middle-circle, .external-circle, .button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -180,6 +180,67 @@ a {
   box-shadow: 0 3px 10px 1px #706b6b;
   cursor: pointer;
   opacity: 0.9;
+}
+
+@keyframes waiting-soft {
+  0% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(250deg);
+  }
+}
+@keyframes hide-slow {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.page {
+  opacity: 0.1;
+  animation: waiting-soft 1000ms 4000ms linear forwards;
+}
+
+.external-circle {
+  position: absolute;
+  top: 30%;
+  width: 180px;
+  height: 180px;
+  border: 10px solid transparent;
+  border-radius: 50%;
+  animation: rotate 4000ms linear, hide-slow 1000ms 3000ms linear forwards;
+  border-bottom-color: #9256dc;
+  border-top-color: #9256dc;
+}
+
+.middle-circle {
+  width: 120px;
+  height: 120px;
+  border: 10px solid transparent;
+  border-radius: 50%;
+  animation: rotate 4000ms linear, hide-slow 1000ms 3000ms linear forwards;
+  border-left-color: #ff7ad9;
+  border-right-color: #ff7ad9;
+}
+
+.internal-circle {
+  width: 60px;
+  height: 60px;
+  border: 10px solid transparent;
+  border-radius: 50%;
+  animation: rotate 4000ms linear, hide-slow 1000ms 3000ms linear forwards;
+  border-bottom-color: #98e2cf;
+  border-top-color: #98e2cf;
 }
 
 .introduction {
