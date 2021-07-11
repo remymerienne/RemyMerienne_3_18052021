@@ -1,0 +1,40 @@
+// -----------------------------------------------------------------------------
+// * This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+
+.footer {
+  height: 195px;
+  padding-left: 20px;
+  background-color: hsl(0, 0%, 21%);
+  color: hsl(0, 0%, 100%);
+
+  // Titre du footer
+  &__h2 {
+    margin: 0;
+    padding: 19px 0;
+    font: lighter 18px $title-font-stack;
+  }
+
+  // Chaque ligne du footer
+  &-line {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+
+    // Logo avant lien h3
+    &__icon {
+      margin-right: 10px;
+      font-size: 13px;
+    }
+
+    // Lien h3
+    &__h3 {
+      margin: 0;
+      font-size: 16px;
+      font-weight: 300;
+    }
+  }
+}
+
+// * End
+// * ------------------------

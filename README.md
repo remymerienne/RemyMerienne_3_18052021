@@ -17,7 +17,7 @@
       - [1.2.3.2. Commits réalisés par branche (GitKraken)](#1232-commits-réalisés-par-branche-gitkraken)
     - [1.2.4. SASS](#124-sass)
   - [1.3. `release/v0.3.0`](#13-releasev030)
-  - [1.4. Effets `feature/effects`](#14-effets-featureeffects)
+  - [1.4. Effets `feature/effects` ***`open`***](#14-effets-featureeffects-open)
   - [1.5. `release/v0.4.0`](#15-releasev040)
 
 ## 1.1. ***Index***
@@ -245,17 +245,19 @@ Ci-dessous, les différents fichiers contenant le code _"scss"_ et compilés ver
 
 Version non responsive de _menu_3.html_ (optimisée IPhone 8, 375px) et sans effet.
 
-## 1.4. Effets `feature/effects`
+## 1.4. Effets `feature/effects` ***`open`***
 
-- \[FEAT\]: add effect on btn
+- \[FEAT\]: add effect on btn ***`close`***
 
-- \[FEAT\]: add effect on heart
+- \[FEAT\]: add effect on heart ***`close`***
 
-- \[FEAT\]menu: add slide effect
+- \[FEAT\]menu: add slide effect without rotation and text-overflow ***`close`***
 
-- \[FEAT\]menu: add effect "hide and show"
+- \[FEAT\]menu: add effect "hide and show" ***`close`***
 
-- \[FEAT\]index: add effect "loading spinner"
+- \[FEAT\]menu(#22): add rotation and text-overflow to slide bloc ***`close`***
+
+- \[FEAT\]index: add effect "loading spinner" ***`close`***
 
 ## 1.5. `release/v0.4.0`
 

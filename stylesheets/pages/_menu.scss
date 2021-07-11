@@ -1,0 +1,240 @@
+// -----------------------------------------------------------------------------
+// * This file contains styles that are specific to the menu page.
+// -----------------------------------------------------------------------------
+
+// ================MENU================
+// - 1. Header
+// - 2. Section "menu"
+// =    a. Header de section "menu-header"
+// =    b. Section "menu-stage" (bloc "Entrées", "Plats" ou "Desserts")
+// - 5. Dish module
+// - 6. Effects (apparition progressive des plats)
+// - 7. Layout button
+// ====================================
+
+// - 1. Header
+// --------------------------
+.header {
+
+  // Flèche
+  &__icon {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    color: hsl(0, 0%, 21%);
+    font-size: 19px;
+  }
+}
+
+// - 2. Section "menu"
+// --------------------------
+.menu {
+  height: 1415px;
+  background-color: $background-color;
+
+  // = a. Header de section "menu-header"
+  &-header {
+    height: 272px;
+    background: url('../images/a-la-francaise.jpg') center bottom / cover no-repeat;
+
+    // Bannière en bas d'image
+    &__banner {
+      position: relative;
+      top: 218px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 80px;
+      border-radius: 40px 40px 0 0;
+      background-color: $background-color;
+
+
+      // Nom du restaurant
+      h2 {
+        margin: 50px 0 22px 20px;
+        font: lighter 27px $title-font-stack;
+      }
+
+      // Deux logos "heart" superposés
+      .fa-heart {
+        position: absolute;
+        margin: 28px 0 0 87%;
+        font-size: 23px;
+      }
+
+      // Apparition du dégradé dans le coeur
+      @include heart;
+    }
+  }
+
+  // = b. Section "menu-stage" (bloc "Entrées", "Plats" ou "Desserts")
+  &-stage {
+
+    // Titre "ENTREES", PLATS ou "DESSERTS"
+    &__h3 {
+      margin: 12px 0 16px 20px;
+      font-size: 16px;
+      font-weight: 300;
+
+      // Soulignement partiel
+      &--underline {
+        display: inline-block;
+        height: 27px;
+        margin-top: 30px;
+        border-bottom: 3px solid $tertiary-color;
+      }
+    }
+  }
+}
+
+// - 5. Dish module
+// --------------------------
+.dish {
+  display: flex;
+  width: 345px;
+  height: 70px;
+  margin: 0 auto 12px auto;
+  box-shadow: 0 3px 10px 1px lighten($shadow-color, $percent-light-shadow);
+  overflow: hidden;
+  border-radius: 15px;
+  background-color: hsl(0, 0%, 100%);
+  opacity: 0;
+  transform: translateY(10px);
+
+  // Bloc contenant le nom du plat et les précisions
+  &-detail {
+    width: 345px;
+    cursor: pointer;
+    @extend %text-overflow;
+
+    // Nom du plat
+    &__h4 {
+      margin: 0;
+      padding: 12px 0 0 15px;
+      font-size: 18px;
+      font-weight: 400;
+      @extend %text-overflow;
+    }
+
+    // Précisions sur le plat
+    &__p {
+      margin: 0;
+      padding: 5px 0 0 15px;
+      font-size: 15px;
+      font-weight: 300;
+      @extend %text-overflow;
+    }
+  }
+
+  // Bloc contenant le prix du plat
+  &-price {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+
+    //prix du plat
+    &__p {
+      margin-right: 20px;
+      font-size: 15px;
+      font-weight: 500;
+    }
+  }
+
+  // Bloc mobile apparaissant au survol
+  &-slide {
+    @extend %flex-all-center;
+    width: 90px;
+    height: 70px;
+    margin-right: -80px;
+    background-color: $tertiary-color;
+    cursor: pointer;
+    transition: margin 500ms linear;
+
+    // Icone "validate" dans bloc mobile
+    &__icon {
+      color: white;
+      font-size: 22px;
+    }
+  }
+
+  // Apparition du bloc mobile
+  &:hover .dish-slide {
+    margin: 0;
+  }
+
+  // Rotation de l'icône "validate"
+  &:hover .dish-slide__icon {
+    transform: rotate(360deg);
+    transition: transform 500ms linear;
+  }
+}
+
+// - 6. Effects (apparition progressive des plats)
+// --------------------------
+// Effets sur les entrés
+#one {
+  @include hide-show-slide (500ms);
+}
+
+#two {
+  @include hide-show-slide (800ms);
+}
+
+#three {
+  @include hide-show-slide (1100ms);
+}
+
+// Effets sur les plats
+#four {
+  @include hide-show-slide (1700ms);
+}
+
+#five {
+  @include hide-show-slide (2000ms);
+}
+
+#six {
+  @include hide-show-slide (2300ms);
+}
+
+// Effets sur les desserts
+#seven {
+  @include hide-show-slide (3000ms);
+}
+
+#eight {
+  @include hide-show-slide (3300ms);
+}
+
+#nine {
+  @include hide-show-slide (3600ms);
+}
+
+@keyframes hide-show {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+// - 7. Layout button
+// --------------------------
+.button {
+  margin-top: 50px;
+}
+
+// * End
+// * ------------------------

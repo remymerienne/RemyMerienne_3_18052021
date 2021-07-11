@@ -1,0 +1,20 @@
+// -----------------------------------------------------------------------------
+// * This file contains all application-wide Sass placeholders.
+// -----------------------------------------------------------------------------
+
+/// Centrage Flexbox
+%flex-all-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/// Text Overflow
+%text-overflow {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+// * End
+// * ------------------------
