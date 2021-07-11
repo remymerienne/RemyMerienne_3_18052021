@@ -1,0 +1,29 @@
+// -----------------------------------------------------------------------------
+// * This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+
+.button {
+  @extend %flex-all-center;
+  width: 220px;
+  height: 50px;
+  margin: 0 auto;
+  box-shadow: 0 3px 10px 1px $shadow-color;
+  border-radius: 50px;
+  background: linear-gradient(to bottom right, $secondary-color, $primary-color) hsl(0, 0%, 100%);
+  opacity: 1;
+  transition: box-shadow 300ms linear, opacity 300ms linear;
+
+  &__p {
+    color: hsl(0, 0%, 100%);
+    font-size: 15px;
+  }
+
+  &:hover {
+    box-shadow: 0 3px 10px 1px darken($shadow-color, 25%);
+    cursor: pointer;
+    opacity: 0.9;
+  }
+}
+
+// * End
+// * ------------------------

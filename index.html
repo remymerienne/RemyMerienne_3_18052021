@@ -7,12 +7,19 @@
   <meta name="description" content="Projet en cours">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Style -->
-  <link rel="stylesheet" type="text/css" href="css/index.css">
   <link rel="stylesheet" type="text/css" href="css/all.css">
+  <link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 
 <body>
   <div class="container">
+    <!-- Loading-spinner -->
+    <div class="external-circle">
+      <div class="middle-circle">
+        <div class="internal-circle"></div>
+      </div>
+    </div>
+    <!-- Loading-spinner END -->
     <div class="page">
       <!-- Header -->
       <header class="header">
@@ -22,9 +29,9 @@
       <main>
         <section class="introduction">
           <!-- Search-module -->
-          <div class="search">
-            <span class="search__icon fas fa-map-marker-alt"></span>
-            <p class="search__p">Paris, Belleville</p>
+          <div class="introduction-search">
+            <span class="introduction-search__icon fas fa-map-marker-alt"></span>
+            <p class="introduction-search__p">Paris, Belleville</p>
           </div>
           <!-- Search-module END -->
           <h2 class="introduction__h2">Réservez le menu qui vous convient</h2>
@@ -88,7 +95,8 @@
                 <h3>La palette du goût</h3>
                 <p>Ménilmontant</p>
               </div>
-              <span class="resto-description__icon far fa-heart"></span>
+              <span class="far fa-heart heart-first"></span>
+              <span class="fas fa-heart heart-second"></span>
             </div>
           </div>
           <!-- Restaurant-module-1 END -->
@@ -104,12 +112,13 @@
                 <h3>La note enchantée</h3>
                 <p>Charonne</p>
               </div>
-              <span class="resto-description__icon far fa-heart"></span>
+              <span class="far fa-heart heart-first"></span>
+              <span class="fas fa-heart heart-second"></span>
             </div>
           </div>
           <!-- Restaurant-module-2 END -->
           <!-- Restaurant-module-3 -->
-          <a href="menu_1.html">
+          <a href="menu_3.html">
             <div class="resto">
               <div class="resto-picture resto-picture--three">
               </div>
@@ -118,7 +127,8 @@
                   <h3>&Agrave; la française</h3>
                   <p>Cité Rouge</p>
                 </div>
-                <span class="resto-description__icon far fa-heart"></span>
+                <span class="far fa-heart heart-first"></span>
+                <span class="fas fa-heart heart-second"></span>
               </div>
             </div>
           </a>
@@ -132,7 +142,8 @@
                 <h3>Le délice des sens</h3>
                 <p>Folie-Méricourt</p>
               </div>
-              <span class="resto-description__icon far fa-heart"></span>
+              <span class="far fa-heart heart-first"></span>
+              <span class="fas fa-heart heart-second"></span>
             </div>
           </div>
           <!-- Restaurant-module-4 END -->
@@ -143,11 +154,11 @@
       <footer class="footer">
         <h2 class="footer__h2">ohmyfood</h2>
         <div class="footer-line">
-          <span class="fas fa-utensils"></span>
+          <span class="footer-line__icon fas fa-utensils"></span>
           <h3 class="footer-line__h3">Proposer un restaurant</h3>
         </div>
         <div class="footer-line">
-          <span class="fas fa-hands-helping"></span>
+          <span class="footer-line__icon fas fa-hands-helping"></span>
           <h3 class="footer-line__h3">Devenir partenaire</h3>
         </div>
         <div class="footer-line">

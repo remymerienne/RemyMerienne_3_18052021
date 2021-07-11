@@ -1,0 +1,19 @@
+// -----------------------------------------------------------------------------
+// * This file contains very basic layouts.
+// -----------------------------------------------------------------------------
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  max-width: $max-width-container;
+}
+
+.page {
+  width: 100%;
+  max-width: $max-width-page;
+}
+
+// * End
+// * ------------------------

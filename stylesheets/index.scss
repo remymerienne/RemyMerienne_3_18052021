@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+@import
+  'abstracts/variables',
+  'abstracts/mixins',
+  'abstracts/placeholders';
+
+@import
+  'base/base',
+  'base/fonts',
+  'base/typography';
+
+@import
+  'layout/header',
+  'layout/footer',
+  'layout/page';
+
+@import
+  'components/button',
+  'components/loader';
+
+@import
+  'pages/index';

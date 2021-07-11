@@ -1,10 +1,7 @@
 .DS_Store
-draft.html
-draft.css
 note.txt
 .sass-cache/
 dart-sass/
-stylesheets/
 *.css.map
 *.sass.map
 *.scss.map
