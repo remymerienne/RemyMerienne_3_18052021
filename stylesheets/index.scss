@@ -11,13 +11,16 @@
   'base/typography';
 
 @import
+  'animations/loader',
+  'animations/transition';
+
+@import
   'layout/header',
   'layout/footer',
   'layout/page';
 
 @import
-  'components/button',
-  'components/loader';
+  'components/button';
 
 @import
   'pages/index';
