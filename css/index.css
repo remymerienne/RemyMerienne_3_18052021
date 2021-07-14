@@ -1,4 +1,4 @@
-.operation-step__number, .introduction-search, .middle-circle, .external-circle, .button {
+.operation-step__number, .introduction-search, .button, .middle-circle, .external-circle {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -16,8 +16,10 @@ body {
 }
 
 a {
-  text-decoration: none;
+  display: block;
+  height: 100%;
   color: inherit;
+  text-decoration: none;
 }
 
 @font-face {
@@ -115,73 +117,6 @@ a {
   font-family: "Roboto", sans-serif;
 }
 
-.header__h1 {
-  margin: 0;
-  padding: 12px 0 5px 0;
-  background-color: white;
-  font: lighter 30px "Shrikhand", serif;
-  text-align: center;
-}
-
-.footer {
-  height: 195px;
-  padding-left: 20px;
-  background-color: #363636;
-  color: white;
-}
-.footer__h2 {
-  margin: 0;
-  padding: 19px 0;
-  font: lighter 18px "Shrikhand", serif;
-}
-.footer-line {
-  display: flex;
-  align-items: center;
-  margin-bottom: 8px;
-}
-.footer-line__icon {
-  margin-right: 10px;
-  font-size: 13px;
-}
-.footer-line__h3 {
-  margin: 0;
-  font-size: 16px;
-  font-weight: 300;
-}
-
-.container {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  margin: auto;
-  max-width: 1920px;
-}
-
-.page {
-  width: 100%;
-  max-width: 1187px;
-}
-
-.button {
-  width: 220px;
-  height: 50px;
-  margin: 0 auto;
-  box-shadow: 0 3px 10px 1px #afacac;
-  border-radius: 50px;
-  background: linear-gradient(to bottom right, #ff7ad9, #9256dc) white;
-  opacity: 1;
-  transition: box-shadow 300ms linear, opacity 300ms linear;
-}
-.button__p {
-  color: white;
-  font-size: 15px;
-}
-.button:hover {
-  box-shadow: 0 3px 10px 1px #706b6b;
-  cursor: pointer;
-  opacity: 0.9;
-}
-
 @keyframes waiting-soft {
   0% {
     opacity: 0.1;
@@ -206,16 +141,11 @@ a {
     opacity: 0;
   }
 }
-.page {
-  opacity: 0.1;
-  animation: waiting-soft 1000ms 4000ms linear forwards;
-}
-
 .external-circle {
-  position: absolute;
-  top: 30%;
   width: 180px;
   height: 180px;
+  position: absolute;
+  top: 30%;
   border: 10px solid transparent;
   border-radius: 50%;
   animation: rotate 4000ms linear, hide-slow 1000ms 3000ms linear forwards;
@@ -243,8 +173,103 @@ a {
   border-top-color: #98e2cf;
 }
 
+/*
+<div class="external-circle">
+  <div class="middle-circle">
+    <div class="internal-circle"></div>
+  </div>
+</div>
+*/
+/*
+%flex-all-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+*/
+@keyframes waiting-soft {
+  0% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.page {
+  opacity: 0.1;
+  animation: waiting-soft 1000ms 4000ms linear forwards;
+}
+
+.header__h1 {
+  margin: 0;
+  padding: 12px 0 5px 0;
+  background-color: white;
+  font: lighter 30px "Shrikhand", serif;
+  text-align: center;
+}
+
+.footer {
+  width: 100%;
+  height: 195px;
+  padding-left: 20px;
+  background-color: #363636;
+  color: white;
+}
+.footer__h2 {
+  margin: 0;
+  padding: 19px 0;
+  font: lighter 18px "Shrikhand", serif;
+}
+.footer-line {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.footer-line__icon {
+  margin-right: 10px;
+  font-size: 13px;
+}
+.footer-line__h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.page {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 1920px;
+}
+
+.button {
+  width: 220px;
+  height: 50px;
+  margin: 0 auto;
+  box-shadow: 0 3px 10px 1px #afacac;
+  border-radius: 50px;
+  background: linear-gradient(to bottom right, #ff7ad9, #9256dc) white;
+  opacity: 1;
+  transition: box-shadow 300ms linear, opacity 300ms linear;
+}
+.button__p {
+  color: white;
+  font-size: 15px;
+}
+.button:hover {
+  box-shadow: 0 3px 10px 1px #706b6b;
+  cursor: pointer;
+  opacity: 0.9;
+}
+
 .introduction {
-  height: 340px;
+  width: 100%;
+  padding-bottom: 50px;
   background-color: whitesmoke;
 }
 .introduction-search {
@@ -270,38 +295,69 @@ a {
   text-align: center;
 }
 
-.operation {
-  margin: auto;
+@media screen and (min-width: 750px) {
+  .wrap-op {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
 }
 .operation__h2 {
-  margin: 45px 0 5px 20px;
+  margin: 45px 0 5px 5%;
   font-size: 24px;
   font-weight: 500;
 }
+@media screen and (min-width: 480px) {
+  .operation__h2 {
+    display: inline-block;
+    height: 40px;
+    margin-left: 3%;
+    border-bottom: 5px solid #98e2cf;
+  }
+}
 .operation-step {
-  width: 375px;
+  width: 90%;
   margin: auto;
+}
+@media screen and (min-width: 375px) {
+  .operation-step {
+    width: 375px;
+  }
+}
+@media screen and (min-width: 750px) {
+  .operation-step {
+    margin: 15px 0;
+  }
 }
 .operation-step__number {
   position: relative;
   width: 24px;
   height: 24px;
   top: 51px;
-  left: 17px;
+  left: -10px;
   border-radius: 50px;
   background-color: #9256dc;
   color: white;
   font-size: 14px;
 }
+@media screen and (min-width: 375px) {
+  .operation-step__number {
+    left: 17px;
+  }
+}
 .operation-step__action {
   display: flex;
   align-items: center;
-  width: 320px;
   height: 75px;
   margin: auto;
   box-shadow: 0 3px 10px 1px #e1e0e0;
   border-radius: 20px;
   background-color: whitesmoke;
+}
+@media screen and (min-width: 375px) {
+  .operation-step__action {
+    width: 320px;
+  }
 }
 .operation-step__action .fas {
   margin-left: 35px;
@@ -327,19 +383,45 @@ a {
 }
 
 .navigation {
-  height: 1230px;
+  width: 100vw;
+  max-width: 1187px;
   margin-top: 60px;
+  padding: 45px 0;
   background-color: whitesmoke;
 }
+@media screen and (min-width: 480px) {
+  .navigation {
+    padding: 10px 0 20px 0;
+  }
+}
+@media screen and (min-width: 750px) {
+  .navigation {
+    margin-bottom: 60px;
+  }
+}
 .navigation__h2 {
-  margin: 20px 0 21px 20px;
-  padding-top: 55px;
+  margin: 20px 0 21px 5%;
   font-size: 24px;
   font-weight: 500;
 }
+@media screen and (min-width: 480px) {
+  .navigation__h2 {
+    display: inline-block;
+    height: 40px;
+    margin: 20px 0 40px 3%;
+    border-bottom: 5px solid #98e2cf;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .wrap-two-resto {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
 
 .resto {
-  width: 335px;
+  width: 90%;
   height: 250px;
   margin: 0 auto 20px auto;
   overflow: hidden;
@@ -347,9 +429,43 @@ a {
   border-radius: 15px;
   background-color: white;
 }
+@media screen and (min-width: 480px) {
+  .resto {
+    margin: 0 auto 5% auto;
+    height: 330px;
+  }
+}
+@media screen and (min-width: 750px) {
+  .resto {
+    width: 45%;
+    height: 250px;
+    margin: 0 0 3% 0;
+  }
+}
+@media screen and (min-width: 970px) {
+  .resto {
+    height: 350px;
+  }
+}
 .resto-picture {
   height: 170px;
   background: center bottom/cover no-repeat;
+}
+@media screen and (min-width: 480px) {
+  .resto-picture {
+    background-position: center;
+    height: 250px;
+  }
+}
+@media screen and (min-width: 750px) {
+  .resto-picture {
+    height: 170px;
+  }
+}
+@media screen and (min-width: 970px) {
+  .resto-picture {
+    height: 270px;
+  }
 }
 .resto-picture--one {
   background-image: url("../images/la-palette-du-gout.jpg");
@@ -365,11 +481,10 @@ a {
   background-image: url("../images/le-delice-des-sens.jpg");
 }
 .resto-picture__new {
-  position: relative;
+  float: right;
   width: 80px;
   height: 27px;
-  left: 240px;
-  top: 13px;
+  margin: 15px 18px 0 0;
   background-color: #98e2cf;
 }
 .resto-picture__new p {
@@ -394,9 +509,11 @@ a {
   font-size: 17px;
   font-weight: 300;
 }
-.resto-description .fa-heart {
+.resto-description__heart {
+  margin: 8px 20px 0 0;
+}
+.resto-description__heart .fa-heart {
   position: absolute;
-  margin: 5px 0 0 270px;
   font-size: 23px;
 }
 .resto-description .heart-first {

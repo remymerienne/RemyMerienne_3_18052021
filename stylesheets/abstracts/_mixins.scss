@@ -10,7 +10,6 @@
   animation: hide-show 500ms linear $delay forwards, slide 500ms linear $delay forwards;
 }
 
-
 /// Gradient appearance in background of heart
 /// @author Rémy Merienne
 @mixin heart {
@@ -33,6 +32,34 @@
         cursor: pointer;
       }
     }
+  }
+}
+
+/// Mixins Media Queries Extra-small
+@mixin xs {
+  @media screen and (min-width: map-get($breakpoints, xs)) {
+      @content;
+  }
+}
+
+/// Mixins Media Queries Small
+@mixin sm {
+  @media screen and (min-width: map-get($breakpoints, sm)) {
+      @content;
+  }
+}
+
+/// Mixins Media Queries Medium
+@mixin md {
+  @media screen and (min-width: map-get($breakpoints, md)) {
+      @content;
+  }
+}
+
+/// Mixins Media Queries Large
+@mixin lg {
+  @media screen and (min-width: map-get($breakpoints, lg)) {
+      @content;
   }
 }
 

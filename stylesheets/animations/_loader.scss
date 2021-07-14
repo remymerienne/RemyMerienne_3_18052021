@@ -1,5 +1,5 @@
 // -----------------------------------------------------------------------------
-// * This file contains all styles related to the loader component.
+// * This file contains all styles related to the loader effect.
 // -----------------------------------------------------------------------------
 
 // ================MENU================
@@ -23,20 +23,13 @@ $external-color: $primary-color;
 $middle-color: $secondary-color;
 $internal-color: $tertiary-color;
 
-// - 2. Mixins
+// - 2. Mixin
 // --------------------------
 
 @mixin loader ($border-thickness, $rotation-time, $full-opacity-time, $time-to-hide) {
   border: $border-thickness solid transparent;
   border-radius: 50%;
   animation: rotate $rotation-time linear, hide-slow $time-to-hide $full-opacity-time linear forwards;
-}
-
-@mixin waiting-page ($time-to-hide, $rotation-time) {
-  .page {
-    opacity: 0.1;
-    animation: waiting-soft $time-to-hide $rotation-time linear forwards;
-  }
 }
 
 // - 3. Variables
@@ -81,14 +74,12 @@ $internal-circle: $external-circle/3;
 // - 5. Code
 // --------------------------
 
-@include waiting-page ($time-to-hide, $rotation-time);
-
 .external-circle {
   @extend %flex-all-center;
-  position: absolute;
-  top: 30%;
   width: $external-circle;
   height: $external-circle;
+  position: absolute;
+  top: 30%;
   @include loader($border-thickness, $rotation-time, $full-opacity-time, $time-to-hide);
   border-bottom-color: $external-color;
   border-top-color: $external-color;
@@ -113,3 +104,21 @@ $internal-circle: $external-circle/3;
 
 // * End
 // * ------------------------
+
+/// Code HTML pour ré-utilisation
+/*
+<div class="external-circle">
+  <div class="middle-circle">
+    <div class="internal-circle"></div>
+  </div>
+</div>
+*/
+
+/// Centrage Flexbox
+/*
+%flex-all-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+*/

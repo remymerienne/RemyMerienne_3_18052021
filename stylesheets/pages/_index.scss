@@ -12,7 +12,8 @@
 // - 1. Section "introduction"
 // --------------------------
 .introduction {
-  height: 340px;
+  width: 100%;
+  padding-bottom: 50px;
   background-color: $background-color;
 
   // Search module (barre de recherche de localité)
@@ -49,19 +50,40 @@
 
 // - 2. Section "operation"
 // --------------------------
-.operation {
-  margin: auto;
+@include md {
+  .wrap-op {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}
 
+.operation {
   &__h2 {
-    margin: 45px 0 5px 20px;
+    margin: 45px 0 5px 5%;
     font-size: 24px;
     font-weight: 500;
+
+    @include sm {
+      display: inline-block;
+      height: 40px;
+      margin-left: 3%;
+      border-bottom: 5px solid $tertiary-color;
+    }
   }
 
   // Step module (bloc contenant le numero et la vignette d'action)
   &-step {
-    width: 375px;
+    width: 90%;
     margin: auto;
+
+    @include xs {
+      width: 375px;
+    }
+
+    @include md {
+      margin: 15px 0;
+    }
 
     // Numero "rond et violet"
     &__number {
@@ -70,23 +92,30 @@
       width: 24px;
       height: 24px;
       top: 51px;
-      left: 17px;
+      left: -10px;
       border-radius: 50px;
       background-color: $primary-color;
       color: hsl(0, 0%, 100%);
       font-size: 14px;
+
+      @include xs {
+        left: 17px;
+      }
     }
 
     // Vignette d'action
     &__action {
       display: flex;
       align-items: center;
-      width: 320px;
       height: 75px;
       margin: auto;
       box-shadow: 0 3px 10px 1px lighten($shadow-color, $percent-light-shadow);
       border-radius: 20px;
       background-color: $background-color;
+
+      @include xs {
+        width: 320px;
+      }
 
       // Logo de la vignette
       .fas {
@@ -128,22 +157,45 @@
 // - 3. Nav "navigation"
 // --------------------------
 .navigation {
-  height: 1230px;
+  width: 100vw;
+  max-width: 1187px;
   margin-top: 60px;
+  padding: 45px 0;
   background-color: $background-color;
 
+  @include sm {
+    padding: 10px 0 20px 0;
+  }
+
+  @include md {
+    margin-bottom: 60px;
+  }
+
   &__h2 {
-    margin: 20px 0 21px 20px;
-    padding-top: 55px;
+    margin: 20px 0 21px 5%;
     font-size: 24px;
     font-weight: 500;
+
+    @include sm {
+      display: inline-block;
+      height: 40px;
+      margin: 20px 0 40px 3%;
+      border-bottom: 5px solid $tertiary-color;
+    }
   }
 }
 
 // - 4. Restaurant module
 // --------------------------
+.wrap-two-resto {
+  @include md {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
 .resto {
-  width: 335px;
+  width: 90%;
   height: 250px;
   margin: 0 auto 20px auto;
   overflow: hidden;
@@ -151,10 +203,38 @@
   border-radius: 15px;
   background-color: hsl(0, 0%, 100%);
 
+  @include sm {
+    margin: 0 auto 5% auto;
+    height: 330px;
+  }
+
+  @include md {
+    width: 45%;
+    height: 250px;
+    margin: 0 0 3% 0;
+  }
+
+  @include lg {
+    height: 350px;
+  }
+
   // Bloc photo
   &-picture {
     height: 170px;
     background: center bottom / cover no-repeat;
+
+    @include sm {
+      background-position: center;
+      height: 250px;
+    }
+
+    @include md {
+      height: 170px;
+    }
+
+    @include lg {
+      height: 270px;
+    }
 
     // Image resto 1  
     &--one {
@@ -179,11 +259,10 @@
 
     // Encart "Nouveau"
     &__new {
-      position: relative;
+      float: right;
       width: 80px;
       height: 27px;
-      left: 240px;
-      top: 13px;
+      margin: 15px 18px 0 0;
       background-color: $tertiary-color;
 
       p {
@@ -220,11 +299,15 @@
       }
     }
 
-    // Logo "heart"
-    .fa-heart {
-      position: absolute;
-      margin: 5px 0 0 270px;
-      font-size: 23px;
+    // Bloc contenant les deux coeurs
+    &__heart {
+      margin: 8px 20px 0 0;
+
+      // Logos "heart"
+      .fa-heart {
+        position: absolute;
+        font-size: 23px;
+      }
     }
 
     // Apparition du dégradé dans le coeur

@@ -6,6 +6,7 @@
 // - 1. Lengths
 // - 2. Colors
 // - 3. Fonts
+// - 4. Breakpoints map
 // ====================================
 
 // - 1. Lengths
@@ -13,11 +14,7 @@
 
 /// Container's maximum width
 /// @type Length
-$max-width-container: 1920px;
-
-/// Page's maximum width
-/// @type Length
-$max-width-page: 1187px;
+$width-container: 1920px;
 
 // - 2. Colors
 // --------------------------
@@ -46,7 +43,7 @@ $shadow-color: hsl(0, 2%, 68%);
 /// @type Percent
 $percent-light-shadow: 20%;
 
-// - 2. Fonts
+// - 3. Fonts
 // --------------------------
 
 /// Title font family
@@ -61,6 +58,19 @@ $title-font-stack: (
 $text-font-stack: (
   'Roboto',
   sans-serif,
+);
+
+// - 4. Breakpoints map
+// --------------------------
+
+/// Breakpoints map
+/// @prop {String} keys - Keys are identifiers mapped to a given length
+/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+$breakpoints: (
+  'lg': 970px,
+  'md': 750px,
+  'sm': 480px,
+  'xs': 375px,
 );
 
 // * End
