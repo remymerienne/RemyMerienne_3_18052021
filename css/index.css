@@ -447,17 +447,97 @@ a {
   }
 }
 .resto-picture--laPaletteDuGout {
-  background-image: url("../images/la-palette-du-gout.jpg");
+  background-image: url("../images/la-palette-du-gout-337px.jpg");
+}
+@media screen and (min-width: 375px) {
+  .resto-picture--laPaletteDuGout {
+    background-image: url("../images/la-palette-du-gout-479px.jpg");
+  }
+}
+@media screen and (min-width: 480px) {
+  .resto-picture--laPaletteDuGout {
+    background-image: url("../images/la-palette-du-gout-675px.jpg");
+  }
+}
+@media screen and (min-width: 750px) {
+  .resto-picture--laPaletteDuGout {
+    background-image: url("../images/la-palette-du-gout-479px.jpg");
+  }
+}
+@media screen and (min-width: 970px) {
+  .resto-picture--laPaletteDuGout {
+    background-image: url("../images/la-palette-du-gout-535px.jpg");
+  }
 }
 .resto-picture--laNoteEnchantee {
-  background-image: url("../images/la-note-enchantee.jpg");
   background-position: center;
+  background-image: url("../images/la-note-enchantee-337px.jpg");
+}
+@media screen and (min-width: 375px) {
+  .resto-picture--laNoteEnchantee {
+    background-image: url("../images/la-note-enchantee-479px.jpg");
+  }
+}
+@media screen and (min-width: 480px) {
+  .resto-picture--laNoteEnchantee {
+    background-image: url("../images/la-note-enchantee-675px.jpg");
+  }
+}
+@media screen and (min-width: 750px) {
+  .resto-picture--laNoteEnchantee {
+    background-image: url("../images/la-note-enchantee-479px.jpg");
+  }
+}
+@media screen and (min-width: 970px) {
+  .resto-picture--laNoteEnchantee {
+    background-image: url("../images/la-note-enchantee-535px.jpg");
+  }
 }
 .resto-picture--aLaFrancaise {
-  background-image: url("../images/a-la-francaise.jpg");
+  background-image: url("../images/a-la-francaise-337px.jpg");
+}
+@media screen and (min-width: 375px) {
+  .resto-picture--aLaFrancaise {
+    background-image: url("../images/a-la-francaise-479px.jpg");
+  }
+}
+@media screen and (min-width: 480px) {
+  .resto-picture--aLaFrancaise {
+    background-image: url("../images/a-la-francaise-675px.jpg");
+  }
+}
+@media screen and (min-width: 750px) {
+  .resto-picture--aLaFrancaise {
+    background-image: url("../images/a-la-francaise-479px.jpg");
+  }
+}
+@media screen and (min-width: 970px) {
+  .resto-picture--aLaFrancaise {
+    background-image: url("../images/a-la-francaise-535px.jpg");
+  }
 }
 .resto-picture--leDeliceDesSens {
-  background-image: url("../images/le-delice-des-sens.jpg");
+  background-image: url("../images/le-delice-des-sens-337px.jpg");
+}
+@media screen and (min-width: 375px) {
+  .resto-picture--leDeliceDesSens {
+    background-image: url("../images/le-delice-des-sens-479px.jpg");
+  }
+}
+@media screen and (min-width: 480px) {
+  .resto-picture--leDeliceDesSens {
+    background-image: url("../images/le-delice-des-sens-675px.jpg");
+  }
+}
+@media screen and (min-width: 750px) {
+  .resto-picture--leDeliceDesSens {
+    background-image: url("../images/le-delice-des-sens-479px.jpg");
+  }
+}
+@media screen and (min-width: 970px) {
+  .resto-picture--leDeliceDesSens {
+    background-image: url("../images/le-delice-des-sens-535px.jpg");
+  }
 }
 .resto-picture__new {
   float: right;

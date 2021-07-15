@@ -269,16 +269,27 @@ a {
   background: center/cover no-repeat #98e2cf;
 }
 .menu-header--laPaletteDuGout {
-  background-image: url("../images/la-palette-du-gout.jpg");
+  background-image: url("../images/la-palette-du-gout-337px.jpg");
 }
-.menu-header--aLaFrancaise {
-  background-image: url("../images/a-la-francaise.jpg");
+@media screen and (min-width: 375px) {
+  .menu-header--laPaletteDuGout {
+    background-image: url("../images/la-palette-du-gout-479px.jpg");
+  }
 }
-.menu-header--laNoteEnchantee {
-  background-image: url("../images/la-note-enchantee.jpg");
+@media screen and (min-width: 480px) {
+  .menu-header--laPaletteDuGout {
+    background-image: url("../images/la-palette-du-gout-749px.jpg");
+  }
 }
-.menu-header--leDeliceDesSens {
-  background-image: url("../images/le-delice-des-sens.jpg");
+@media screen and (min-width: 750px) {
+  .menu-header--laPaletteDuGout {
+    background-image: url("../images/la-palette-du-gout-969px.jpg");
+  }
+}
+@media screen and (min-width: 970px) {
+  .menu-header--laPaletteDuGout {
+    background-image: url("../images/la-palette-du-gout-1187px.jpg");
+  }
 }
 @media screen and (min-width: 480px) {
   .menu-header {
@@ -444,4 +455,4 @@ a {
   margin-top: 50px;
 }
 
-/*# sourceMappingURL=menu.css.map */
+/*# sourceMappingURL=menu-gout.css.map */
