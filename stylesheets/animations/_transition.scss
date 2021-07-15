@@ -18,6 +18,11 @@ $hidden-time: 4000ms;
 // - 2. Mixin
 // --------------------------
 
+/// @author Rémy Merienne
+/// @access public
+/// @param {time} $transition-time
+/// @param {time} $hidden-time 
+/// @requires @keyframes waiting-soft
 @mixin waiting-page ($transition-time, $hidden-time) {
   .page {
     opacity: 0.1;

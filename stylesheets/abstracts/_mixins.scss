@@ -2,28 +2,80 @@
 // * This file contains all application-wide Sass mixins.
 // -----------------------------------------------------------------------------
 
-/// Gradual onset
-/// @author Rémy Merienne
-/// @require $delay
-/// @param {time} $delay animation execution time (ms)
-@mixin hide-show-slide ($delay) {
-  animation: hide-show 500ms linear $delay forwards, slide 500ms linear $delay forwards;
+// ================MENU================
+// - 1. Media Queries
+// - 2. Gradient on heart
+// ====================================
+
+// - 1. Media Queries
+// --------------------------
+
+/// Mixins Media Queries Extra-small (min 375px)
+/// @access public
+/// @requires $breakpoints - Breakpoints map
+@mixin xs {
+  @media screen and (min-width: map-get($breakpoints, xs)) {
+    @content;
+  }
 }
+
+/// Mixins Media Queries Small (min 480px)
+/// @access public
+/// @requires $breakpoints - Breakpoints map
+@mixin sm {
+  @media screen and (min-width: map-get($breakpoints, sm)) {
+    @content;
+  }
+}
+
+/// Mixins Media Queries Medium (min 750px)
+/// @access public
+/// @requires $breakpoints - Breakpoints map
+@mixin md {
+  @media screen and (min-width: map-get($breakpoints, md)) {
+    @content;
+  }
+}
+
+/// Mixins Media Queries Large (min 970px)
+/// @access public
+/// @requires $breakpoints - Breakpoints map
+@mixin lg {
+  @media screen and (min-width: map-get($breakpoints, lg)) {
+    @content;
+  }
+}
+
+/// Mixins Media Queries Extra-large (min 1187px)
+/// @access public
+/// @requires $breakpoints - Breakpoints map
+@mixin xl {
+  @media screen and (min-width: map-get($breakpoints, xl)) {
+    @content;
+  }
+}
+
+// - 2. Gradient on heart
+// --------------------------
 
 /// Gradient appearance in background of heart
 /// @author Rémy Merienne
+/// @access public
 @mixin heart {
   .heart {
     &-first {
       z-index: 2;
+
       &:hover {
         z-index: 1;
       }
     }
+
     &-second {
       z-index: 1;
       color: white;
       transition: color 500ms linear;
+
       &:hover {
         z-index: 2;
         background: linear-gradient(to bottom, $primary-color, $secondary-color);
@@ -32,34 +84,6 @@
         cursor: pointer;
       }
     }
-  }
-}
-
-/// Mixins Media Queries Extra-small
-@mixin xs {
-  @media screen and (min-width: map-get($breakpoints, xs)) {
-      @content;
-  }
-}
-
-/// Mixins Media Queries Small
-@mixin sm {
-  @media screen and (min-width: map-get($breakpoints, sm)) {
-      @content;
-  }
-}
-
-/// Mixins Media Queries Medium
-@mixin md {
-  @media screen and (min-width: map-get($breakpoints, md)) {
-      @content;
-  }
-}
-
-/// Mixins Media Queries Large
-@mixin lg {
-  @media screen and (min-width: map-get($breakpoints, lg)) {
-      @content;
   }
 }
 
