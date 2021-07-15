@@ -12,9 +12,13 @@
 // - 1. Lengths
 // --------------------------
 
-/// Container's maximum width
+/// Maximum width
 /// @type Length
-$width-container: 1920px;
+$max-width: 1920px;
+
+/// Beautiful width
+/// @type Length
+$golden-width: 1187px;
 
 // - 2. Colors
 // --------------------------
@@ -67,6 +71,7 @@ $text-font-stack: (
 /// @prop {String} keys - Keys are identifiers mapped to a given length
 /// @prop {Map} values - Values are actual breakpoints expressed in pixels
 $breakpoints: (
+  'xl': 1187px,
   'lg': 970px,
   'md': 750px,
   'sm': 480px,

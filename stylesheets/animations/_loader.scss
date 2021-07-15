@@ -26,6 +26,14 @@ $internal-color: $tertiary-color;
 // - 2. Mixin
 // --------------------------
 
+/// @author Rémy Merienne
+/// @access public
+/// @param {*} $border-thickness 
+/// @param {*} $rotation-time 
+/// @param {*} $full-opacity-time 
+/// @param {*} $time-to-hide 
+/// @requires @keyframes rotate
+/// @requires @keyframes hide-slow
 @mixin loader ($border-thickness, $rotation-time, $full-opacity-time, $time-to-hide) {
   border: $border-thickness solid transparent;
   border-radius: 50%;
@@ -40,16 +48,6 @@ $internal-circle: $external-circle/3;
 
 // - 4. Keyframes
 // --------------------------
-
-@keyframes waiting-soft {
-  0% {
-    opacity: 0.1;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
 
 @keyframes rotate {
   0% {
@@ -104,21 +102,3 @@ $internal-circle: $external-circle/3;
 
 // * End
 // * ------------------------
-
-/// Code HTML pour ré-utilisation
-/*
-<div class="external-circle">
-  <div class="middle-circle">
-    <div class="internal-circle"></div>
-  </div>
-</div>
-*/
-
-/// Centrage Flexbox
-/*
-%flex-all-center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-*/

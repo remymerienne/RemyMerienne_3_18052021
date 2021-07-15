@@ -3,16 +3,25 @@
 // -----------------------------------------------------------------------------
 
 // ================MENU================
-// - 1. Header
-// - 2. Section "menu"
+// - 1. General layout
+// - 2. Header
+// - 3. Section "menu"
 // =    a. Header de section "menu-header"
 // =    b. Section "menu-stage" (bloc "Entrées", "Plats" ou "Desserts")
-// - 5. Dish module
-// - 6. Effects (apparition progressive des plats)
-// - 7. Layout button
+// =    c. Wrapper des trois sections "menu-stage"
+// - 4. Dish module
+// - 5. Layout button
 // ====================================
 
-// - 1. Header
+
+// - 1. General layout
+// --------------------------
+.main {
+  width: 100vw;
+  max-width: $golden-width;
+}
+
+// - 2. Header
 // --------------------------
 .header {
 
@@ -23,19 +32,32 @@
     left: 25px;
     color: hsl(0, 0%, 21%);
     font-size: 19px;
+
+    @include xl {
+      display: none;
+    }
   }
 }
 
-// - 2. Section "menu"
+// - 3. Section "menu"
 // --------------------------
 .menu {
-  height: 1415px;
   background-color: $background-color;
+  padding-bottom: 80px;
 
   // = a. Header de section "menu-header"
   &-header {
     height: 272px;
-    background: url('../images/a-la-francaise.jpg') center bottom / cover no-repeat;
+    background: url('../images/a-la-francaise.jpg') center/cover no-repeat $tertiary-color;
+
+    @include sm {
+      height: 350px;
+    }
+
+    @include lg {
+      height: 400px;
+      background-position: center;
+    }
 
     // Bannière en bas d'image
     &__banner {
@@ -48,6 +70,13 @@
       border-radius: 40px 40px 0 0;
       background-color: $background-color;
 
+      @include sm {
+        top: 296px;
+      }
+
+      @include lg {
+        top: 366px;
+      }
 
       // Nom du restaurant
       h2 {
@@ -69,6 +98,9 @@
 
   // = b. Section "menu-stage" (bloc "Entrées", "Plats" ou "Desserts")
   &-stage {
+    @include lg {
+      padding-top: 10px;
+    }
 
     // Titre "ENTREES", PLATS ou "DESSERTS"
     &__h3 {
@@ -87,13 +119,22 @@
   }
 }
 
-// - 5. Dish module
+// = c. Wrapper des trois sections "menu-stage"
+@include xs {
+  .menu-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}
+
+// - 4. Dish module
 // --------------------------
 .dish {
   display: flex;
-  width: 345px;
+  width: 90%;
   height: 70px;
-  margin: 0 auto 12px auto;
+  margin: 0 10px 12px 10px;
   box-shadow: 0 3px 10px 1px lighten($shadow-color, $percent-light-shadow);
   overflow: hidden;
   border-radius: 15px;
@@ -101,11 +142,20 @@
   opacity: 0;
   transform: translateY(10px);
 
+  @include xs {
+    width: 345px;
+  }
+
   // Bloc contenant le nom du plat et les précisions
   &-detail {
-    width: 345px;
+    width: 90%;
     cursor: pointer;
     @extend %text-overflow;
+
+    @include xs {
+      width: 345px;
+    }
+
 
     // Nom du plat
     &__h4 {
@@ -143,12 +193,16 @@
   // Bloc mobile apparaissant au survol
   &-slide {
     @extend %flex-all-center;
-    width: 90px;
+    width: 70px;
     height: 70px;
     margin-right: -80px;
     background-color: $tertiary-color;
     cursor: pointer;
     transition: margin 500ms linear;
+
+    @include xs {
+      width: 90px;
+    }
 
     // Icone "validate" dans bloc mobile
     &__icon {
@@ -169,68 +223,7 @@
   }
 }
 
-// - 6. Effects (apparition progressive des plats)
-// --------------------------
-// Effets sur les entrés
-#one {
-  @include hide-show-slide (500ms);
-}
-
-#two {
-  @include hide-show-slide (800ms);
-}
-
-#three {
-  @include hide-show-slide (1100ms);
-}
-
-// Effets sur les plats
-#four {
-  @include hide-show-slide (1700ms);
-}
-
-#five {
-  @include hide-show-slide (2000ms);
-}
-
-#six {
-  @include hide-show-slide (2300ms);
-}
-
-// Effets sur les desserts
-#seven {
-  @include hide-show-slide (3000ms);
-}
-
-#eight {
-  @include hide-show-slide (3300ms);
-}
-
-#nine {
-  @include hide-show-slide (3600ms);
-}
-
-@keyframes hide-show {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes slide {
-  0% {
-    transform: translateY(10px);
-  }
-
-  100% {
-    transform: translateY(0);
-  }
-}
-
-// - 7. Layout button
+// - 5. Layout button
 // --------------------------
 .button {
   margin-top: 50px;

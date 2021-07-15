@@ -158,7 +158,7 @@
 // --------------------------
 .navigation {
   width: 100vw;
-  max-width: 1187px;
+  max-width: $golden-width;
   margin-top: 60px;
   padding: 45px 0;
   background-color: $background-color;
@@ -222,6 +222,7 @@
   &-picture {
     height: 170px;
     background: center bottom / cover no-repeat;
+    background-color: $secondary-color;
 
     @include sm {
       background-position: center;

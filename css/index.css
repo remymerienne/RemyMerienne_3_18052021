@@ -117,14 +117,6 @@ a {
   font-family: "Roboto", sans-serif;
 }
 
-@keyframes waiting-soft {
-  0% {
-    opacity: 0.1;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 @keyframes rotate {
   0% {
     transform: rotate(0);
@@ -173,20 +165,6 @@ a {
   border-top-color: #98e2cf;
 }
 
-/*
-<div class="external-circle">
-  <div class="middle-circle">
-    <div class="internal-circle"></div>
-  </div>
-</div>
-*/
-/*
-%flex-all-center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-*/
 @keyframes waiting-soft {
   0% {
     opacity: 0.1;
@@ -450,6 +428,7 @@ a {
 .resto-picture {
   height: 170px;
   background: center bottom/cover no-repeat;
+  background-color: #ff7ad9;
 }
 @media screen and (min-width: 480px) {
   .resto-picture {
