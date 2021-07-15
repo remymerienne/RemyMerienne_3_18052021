@@ -48,7 +48,23 @@
   // = a. Header de section "menu-header"
   &-header {
     height: 272px;
-    background: url('../images/a-la-francaise.jpg') center/cover no-repeat $tertiary-color;
+    background: center / cover no-repeat $tertiary-color;
+
+    &--laPaletteDuGout {
+      background-image: url('../images/la-palette-du-gout.jpg');
+    }
+
+    &--aLaFrancaise {
+      background-image: url('../images/a-la-francaise.jpg');
+    }
+
+    &--laNoteEnchantee {
+      background-image: url('../images/la-note-enchantee.jpg');
+    }
+
+    &--leDeliceDesSens {
+      background-image: url('../images/le-delice-des-sens.jpg');
+    }
 
     @include sm {
       height: 350px;
@@ -89,6 +105,9 @@
         position: absolute;
         margin: 28px 0 0 87%;
         font-size: 23px;
+        @include xl {
+          margin-left: 95%;
+        }
       }
 
       // Apparition du dégradé dans le coeur

@@ -266,7 +266,19 @@ a {
 }
 .menu-header {
   height: 272px;
-  background: url("../images/a-la-francaise.jpg") center/cover no-repeat #98e2cf;
+  background: center/cover no-repeat #98e2cf;
+}
+.menu-header--laPaletteDuGout {
+  background-image: url("../images/la-palette-du-gout.jpg");
+}
+.menu-header--aLaFrancaise {
+  background-image: url("../images/a-la-francaise.jpg");
+}
+.menu-header--laNoteEnchantee {
+  background-image: url("../images/la-note-enchantee.jpg");
+}
+.menu-header--leDeliceDesSens {
+  background-image: url("../images/le-delice-des-sens.jpg");
 }
 @media screen and (min-width: 480px) {
   .menu-header {
@@ -307,6 +319,11 @@ a {
   position: absolute;
   margin: 28px 0 0 87%;
   font-size: 23px;
+}
+@media screen and (min-width: 1187px) {
+  .menu-header__banner .fa-heart {
+    margin-left: 95%;
+  }
 }
 .menu-header__banner .heart-first {
   z-index: 2;
