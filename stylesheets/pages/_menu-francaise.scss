@@ -1,0 +1,257 @@
+// -----------------------------------------------------------------------------
+// * This file contains styles that are specific to the menu page.
+// -----------------------------------------------------------------------------
+
+// ================MENU================
+// - 1. General layout
+// - 2. Header
+// - 3. Section "menu"
+// =    a. Header de section "menu-header"
+// =    b. Section "menu-stage" (bloc "Entrées", "Plats" ou "Desserts")
+// =    c. Wrapper des trois sections "menu-stage"
+// - 4. Dish module
+// - 5. Layout button
+// ====================================
+
+
+// - 1. General layout
+// --------------------------
+.main {
+  width: 100vw;
+  max-width: $golden-width;
+}
+
+// - 2. Header
+// --------------------------
+.header {
+
+  // Flèche
+  &__icon {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    color: hsl(0, 0%, 21%);
+    font-size: 19px;
+
+    @include xl {
+      display: none;
+    }
+  }
+}
+
+// - 3. Section "menu"
+// --------------------------
+.menu {
+  background-color: $background-color;
+  padding-bottom: 80px;
+
+  // = a. Header de section "menu-header"
+  &-header {
+    height: 272px;
+    background: center / cover no-repeat $tertiary-color;
+
+    &--aLaFrancaise {
+      background-image: url('../images/a-la-francaise-337px.jpg');
+
+      @include xs {
+        background-image: url('../images/a-la-francaise-479px.jpg');
+      }
+
+      @include sm {
+        background-image: url('../images/a-la-francaise-749px.jpg');
+      }
+
+      @include md {
+        background-image: url('../images/a-la-francaise-969px.jpg');
+      }
+
+      @include lg {
+        background-image: url('../images/a-la-francaise-1187px.jpg');
+      }
+    }
+
+    @include sm {
+      height: 350px;
+    }
+
+    @include lg {
+      height: 400px;
+      background-position: center;
+    }
+
+    // Bannière en bas d'image
+    &__banner {
+      position: relative;
+      top: 218px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 80px;
+      border-radius: 40px 40px 0 0;
+      background-color: $background-color;
+
+      @include sm {
+        top: 296px;
+      }
+
+      @include lg {
+        top: 366px;
+      }
+
+      // Nom du restaurant
+      h2 {
+        margin: 50px 0 22px 20px;
+        font: lighter 27px $title-font-stack;
+      }
+
+      // Deux logos "heart" superposés
+      .fa-heart {
+        position: absolute;
+        margin: 28px 0 0 87%;
+        font-size: 23px;
+
+        @include xl {
+          margin-left: 95%;
+        }
+      }
+
+      // Apparition du dégradé dans le coeur
+      @include heart;
+    }
+  }
+
+  // = b. Section "menu-stage" (bloc "Entrées", "Plats" ou "Desserts")
+  &-stage {
+    @include lg {
+      padding-top: 10px;
+    }
+
+    // Titre "ENTREES", PLATS ou "DESSERTS"
+    &__h3 {
+      margin: 12px 0 16px 20px;
+      font-size: 16px;
+      font-weight: 300;
+
+      // Soulignement partiel
+      &--underline {
+        display: inline-block;
+        height: 27px;
+        margin-top: 30px;
+        border-bottom: 3px solid $tertiary-color;
+      }
+    }
+  }
+}
+
+// = c. Wrapper des trois sections "menu-stage"
+@include xs {
+  .menu-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}
+
+// - 4. Dish module
+// --------------------------
+.dish {
+  display: flex;
+  width: 90%;
+  height: 70px;
+  margin: 0 10px 12px 10px;
+  box-shadow: 0 3px 10px 1px lighten($shadow-color, $percent-light-shadow);
+  overflow: hidden;
+  border-radius: 15px;
+  background-color: hsl(0, 0%, 100%);
+  opacity: 0;
+  transform: translateY(10px);
+
+  @include xs {
+    width: 345px;
+  }
+
+  // Bloc contenant le nom du plat et les précisions
+  &-detail {
+    width: 90%;
+    cursor: pointer;
+    @extend %text-overflow;
+
+    @include xs {
+      width: 345px;
+    }
+
+
+    // Nom du plat
+    &__h4 {
+      margin: 0;
+      padding: 12px 0 0 15px;
+      font-size: 18px;
+      font-weight: 400;
+      @extend %text-overflow;
+    }
+
+    // Précisions sur le plat
+    &__p {
+      margin: 0;
+      padding: 5px 0 0 15px;
+      font-size: 15px;
+      font-weight: 300;
+      @extend %text-overflow;
+    }
+  }
+
+  // Bloc contenant le prix du plat
+  &-price {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+
+    //prix du plat
+    &__p {
+      margin-right: 20px;
+      font-size: 15px;
+      font-weight: 500;
+    }
+  }
+
+  // Bloc mobile apparaissant au survol
+  &-slide {
+    @extend %flex-all-center;
+    width: 70px;
+    height: 70px;
+    margin-right: -80px;
+    background-color: $tertiary-color;
+    cursor: pointer;
+    transition: margin 500ms linear;
+
+    @include xs {
+      width: 90px;
+    }
+
+    // Icone "validate" dans bloc mobile
+    &__icon {
+      color: white;
+      font-size: 22px;
+    }
+  }
+
+  // Apparition du bloc mobile
+  &:hover .dish-slide {
+    margin: 0;
+  }
+
+  // Rotation de l'icône "validate"
+  &:hover .dish-slide__icon {
+    transform: rotate(360deg);
+    transition: transform 500ms linear;
+  }
+}
+
+// - 5. Layout button
+// --------------------------
+.button {
+  margin-top: 50px;
+}
+
+// * End
+// * ------------------------

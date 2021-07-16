@@ -129,8 +129,8 @@ a {
 }
 
 #gradual-onset-four {
-  -webkit-animation: hide-show 500ms linear 1400ms forwards, slide 500ms linear 1400ms forwards;
-  animation: hide-show 500ms linear 1400ms forwards, slide 500ms linear 1400ms forwards;
+  -webkit-animation: hide-show 500ms linear 1700ms forwards, slide 500ms linear 1700ms forwards;
+  animation: hide-show 500ms linear 1700ms forwards, slide 500ms linear 1700ms forwards;
 }
 
 #gradual-onset-five {
@@ -144,23 +144,18 @@ a {
 }
 
 #gradual-onset-seven {
-  -webkit-animation: hide-show 500ms linear 2600ms forwards, slide 500ms linear 2600ms forwards;
-  animation: hide-show 500ms linear 2600ms forwards, slide 500ms linear 2600ms forwards;
+  -webkit-animation: hide-show 500ms linear 3000ms forwards, slide 500ms linear 3000ms forwards;
+  animation: hide-show 500ms linear 3000ms forwards, slide 500ms linear 3000ms forwards;
 }
 
 #gradual-onset-eight {
-  -webkit-animation: hide-show 500ms linear 3200ms forwards, slide 500ms linear 3200ms forwards;
-  animation: hide-show 500ms linear 3200ms forwards, slide 500ms linear 3200ms forwards;
+  -webkit-animation: hide-show 500ms linear 3300ms forwards, slide 500ms linear 3300ms forwards;
+  animation: hide-show 500ms linear 3300ms forwards, slide 500ms linear 3300ms forwards;
 }
 
 #gradual-onset-nine {
-  -webkit-animation: hide-show 500ms linear 3500ms forwards, slide 500ms linear 3500ms forwards;
-  animation: hide-show 500ms linear 3500ms forwards, slide 500ms linear 3500ms forwards;
-}
-
-#gradual-onset-ten {
-  -webkit-animation: hide-show 500ms linear 3800ms forwards, slide 500ms linear 3800ms forwards;
-  animation: hide-show 500ms linear 3800ms forwards, slide 500ms linear 3800ms forwards;
+  -webkit-animation: hide-show 500ms linear 3600ms forwards, slide 500ms linear 3600ms forwards;
+  animation: hide-show 500ms linear 3600ms forwards, slide 500ms linear 3600ms forwards;
 }
 
 .header__h1 {
@@ -265,31 +260,31 @@ a {
   background: center/cover no-repeat #98e2cf;
 }
 
-.menu-header--laNoteEnchantee {
-  background-image: url("../images/la-note-enchantee-337px.jpg");
+.menu-header--laPaletteDuGout {
+  background-image: url("../images/la-palette-du-gout-337px.jpg");
 }
 
 @media screen and (min-width: 375px) {
-  .menu-header--laNoteEnchantee {
-    background-image: url("../images/la-note-enchantee-479px.jpg");
+  .menu-header--laPaletteDuGout {
+    background-image: url("../images/la-palette-du-gout-479px.jpg");
   }
 }
 
 @media screen and (min-width: 480px) {
-  .menu-header--laNoteEnchantee {
-    background-image: url("../images/la-note-enchantee-749px.jpg");
+  .menu-header--laPaletteDuGout {
+    background-image: url("../images/la-palette-du-gout-749px.jpg");
   }
 }
 
 @media screen and (min-width: 750px) {
-  .menu-header--laNoteEnchantee {
-    background-image: url("../images/la-note-enchantee-969px.jpg");
+  .menu-header--laPaletteDuGout {
+    background-image: url("../images/la-palette-du-gout-969px.jpg");
   }
 }
 
 @media screen and (min-width: 970px) {
-  .menu-header--laNoteEnchantee {
-    background-image: url("../images/la-note-enchantee-1187px.jpg");
+  .menu-header--laPaletteDuGout {
+    background-image: url("../images/la-palette-du-gout-1187px.jpg");
   }
 }
 
