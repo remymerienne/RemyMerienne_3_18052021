@@ -4,11 +4,52 @@
 <head>
   <meta charset="utf-8">
   <title>ohmyfood</title>
-  <meta name="description" content="Projet en cours">
+  <meta name="description" content="Choisissez votre restaurant, composez votre menu et fini le temps d'attente avant de passer votre commande.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Pre-load-fonts -->
+  <link rel="preload" href="fonts/roboto-v27-latin-300.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/roboto-v27-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/roboto-v27-latin-500.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/shrikhand-v6-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <!-- Pre-load-style -->
+  <link rel="preload" href="css/index-min.css" as="style">
+  <link rel="preload" href="css/all.css" as="style">
   <!-- Style -->
+  <link rel="stylesheet" type="text/css" href="css/index-min.css">
   <link rel="stylesheet" type="text/css" href="css/all.css">
-  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+  <link rel="manifest" href="icons/site.webmanifest">
+  <link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#9356dc">
+  <link rel="shortcut icon" href="icons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#ff79da">
+  <meta name="msapplication-TileImage" content="icons/mstile-144x144.png">
+  <meta name="msapplication-config" content="icons/browserconfig.xml">
+  <meta name="theme-color" content="#ff79da">
+  <!-- Open Graph data -->
+  <meta property="og:title" content="ohmyfood" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://remymerienne.github.io/RemyMerienne_3_18052021/" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:image"
+    content="https://remymerienne.github.io/RemyMerienne_3_18052021/supply/open_graph_index.jpg" />
+  <meta property="og:image:type" content="image/jpg" />
+  <meta property="og:image:width" content="1900" />
+  <meta property="og:image:height" content="996" />
+  <meta property="og:image:alt" content="Des restaurants d'exception" />
+  <meta property="og:description"
+    content="Composez votre menu dès maintenant et fini le temps d'attente avant de passer votre commande." />
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="https://remymerienne.github.io/RemyMerienne_3_18052021">
+  <meta name="twitter:title" content="ohmyfood">
+  <meta name="twitter:description"
+    content="Composez votre menu dès maintenant et fini le temps d'attente avant de passer votre commande.">
+  <meta name="twitter:creator" content="@buffetcrush/pixabay">
+  <meta name="twitter:image"
+    content="https://remymerienne.github.io/RemyMerienne_3_18052021/supply/twitter_card_index.jpg">
 </head>
 
 <body>
@@ -26,127 +67,147 @@
         <h1 class="header__h1">ohmyfood</h1>
       </header>
       <!-- Header END -->
+      <div class="introduction" role="complementary">
+        <!-- Search-module -->
+        <div class="introduction-search">
+          <span class="introduction-search__icon fas fa-map-marker-alt"></span>
+          <p class="introduction-search__p">Paris, Belleville</p>
+        </div>
+        <!-- Search-module END -->
+        <h2 class="introduction__h2">Réservez le menu qui vous convient</h2>
+        <p class="introduction__p">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+        <!-- Button -->
+        <div class="button">
+          <p class="button__p">Explorer nos restaurants</p>
+        </div>
+        <!-- Button END-->
+      </div>
       <main>
-        <section class="introduction">
-          <!-- Search-module -->
-          <div class="introduction-search">
-            <span class="introduction-search__icon fas fa-map-marker-alt"></span>
-            <p class="introduction-search__p">Paris, Belleville</p>
-          </div>
-          <!-- Search-module END -->
-          <h2 class="introduction__h2">Réservez le menu qui vous convient</h2>
-          <p class="introduction__p">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-          <!-- Button -->
-          <div class="button">
-            <p class="button__p">Explorer nos restaurants</p>
-          </div>
-          <!-- Button END-->
-        </section>
         <!-- Section-operation -->
         <section class="operation">
           <h2 class="operation__h2">Fonctionnement</h2>
-          <!-- Step-module-1 -->
-          <div class="operation-step">
-            <div class="operation-step__number">
-              <p>1</p>
+          <div class="wrap-op">
+            <!-- Step-module-1 -->
+            <div class="operation-step">
+              <div class="operation-step__number">
+                <p>1</p>
+              </div>
+              <div class="operation-step__action">
+                <span class="fas fa-mobile-alt"></span>
+                <p>Choisissez un restaurant</p>
+              </div>
             </div>
-            <div class="operation-step__action">
-              <span class="fas fa-mobile-alt"></span>
-              <p>Choisissez un restaurant</p>
+            <!-- Step-module-1 END -->
+            <!-- Step-module-2 -->
+            <div class="operation-step">
+              <div class="operation-step__number">
+                <p>2</p>
+              </div>
+              <div class="operation-step__action">
+                <span class="fas fa-list-ul"></span>
+                <p>Composez votre menu</p>
+              </div>
             </div>
+            <!-- Step-module-2 END -->
+            <!-- Step-module-3 -->
+            <div class="operation-step">
+              <div class="operation-step__number">
+                <p>3</p>
+              </div>
+              <div class="operation-step__action operation-step__action--pink">
+                <span class="fas fa-store"></span>
+                <p>Dégustez au restaurant</p>
+              </div>
+            </div>
+            <!-- Step-module-3 END -->
           </div>
-          <!-- Step-module-1 END -->
-          <!-- Step-module-2 -->
-          <div class="operation-step">
-            <div class="operation-step__number">
-              <p>2</p>
-            </div>
-            <div class="operation-step__action">
-              <span class="fas fa-list-ul"></span>
-              <p>Composez votre menu</p>
-            </div>
-          </div>
-          <!-- Step-module-2 END -->
-          <!-- Step-module-3 -->
-          <div class="operation-step">
-            <div class="operation-step__number">
-              <p>3</p>
-            </div>
-            <div class="operation-step__action operation-step__action--pink">
-              <span class="fas fa-store"></span>
-              <p>Dégustez au restaurant</p>
-            </div>
-          </div>
-          <!-- Step-module-3 END -->
         </section>
         <!-- Section-operation END-->
         <!-- Navigation -->
         <nav class="navigation">
           <h2 class="navigation__h2">Restaurants</h2>
-          <!-- Restaurant-module-1 -->
-          <div class="resto">
-            <div class="resto-picture resto-picture--one">
-              <div class="resto-picture__new">
-                <p>Nouveau</p>
-              </div>
-            </div>
-            <div class="resto-description">
-              <div class="resto-description__detail">
-                <h3>La palette du goût</h3>
-                <p>Ménilmontant</p>
-              </div>
-              <span class="far fa-heart heart-first"></span>
-              <span class="fas fa-heart heart-second"></span>
-            </div>
-          </div>
-          <!-- Restaurant-module-1 END -->
-          <!-- Restaurant-module-2 -->
-          <div class="resto">
-            <div class="resto-picture resto-picture--two">
-              <div class="resto-picture__new">
-                <p>Nouveau</p>
-              </div>
-            </div>
-            <div class="resto-description">
-              <div class="resto-description__detail">
-                <h3>La note enchantée</h3>
-                <p>Charonne</p>
-              </div>
-              <span class="far fa-heart heart-first"></span>
-              <span class="fas fa-heart heart-second"></span>
-            </div>
-          </div>
-          <!-- Restaurant-module-2 END -->
-          <!-- Restaurant-module-3 -->
-          <a href="menu_3.html">
+          <div class="wrap-two-resto">
+            <!-- Restaurant-module-1 -->
             <div class="resto">
-              <div class="resto-picture resto-picture--three">
-              </div>
-              <div class="resto-description">
-                <div class="resto-description__detail">
-                  <h3>&Agrave; la française</h3>
-                  <p>Cité Rouge</p>
+              <a href="la-palette-du-gout.html">
+                <div class="resto-picture resto-picture--laPaletteDuGout">
+                  <div class="resto-picture__new">
+                    <p>Nouveau</p>
+                  </div>
                 </div>
-                <span class="far fa-heart heart-first"></span>
-                <span class="fas fa-heart heart-second"></span>
-              </div>
+                <div class="resto-description">
+                  <div class="resto-description__detail">
+                    <h3>La palette du goût</h3>
+                    <p>Ménilmontant</p>
+                  </div>
+                  <div class="resto-description__heart">
+                    <span class="far fa-heart heart-first"></span>
+                    <span class="fas fa-heart heart-second"></span>
+                  </div>
+                </div>
+              </a>
             </div>
-          </a>
-          <!-- Restaurant-module-3 END -->
-          <!-- Restaurant-module-4 -->
-          <div class="resto">
-            <div class="resto-picture resto-picture--four">
+            <!-- Restaurant-module-1 END -->
+            <!-- Restaurant-module-2 -->
+            <div class="resto">
+              <a href="la-note-enchantee.html">
+                <div class="resto-picture resto-picture--laNoteEnchantee">
+                  <div class="resto-picture__new">
+                    <p>Nouveau</p>
+                  </div>
+                </div>
+                <div class="resto-description">
+                  <div class="resto-description__detail">
+                    <h3>La note enchantée</h3>
+                    <p>Charonne</p>
+                  </div>
+                  <div class="resto-description__heart">
+                    <span class="far fa-heart heart-first"></span>
+                    <span class="fas fa-heart heart-second"></span>
+                  </div>
+                </div>
+              </a>
             </div>
-            <div class="resto-description">
-              <div class="resto-description__detail">
-                <h3>Le délice des sens</h3>
-                <p>Folie-Méricourt</p>
-              </div>
-              <span class="far fa-heart heart-first"></span>
-              <span class="fas fa-heart heart-second"></span>
-            </div>
+            <!-- Restaurant-module-2 END -->
           </div>
-          <!-- Restaurant-module-4 END -->
+          <div class="wrap-two-resto">
+            <!-- Restaurant-module-3 -->
+            <div class="resto">
+              <a href="a-la-francaise.html">
+                <div class="resto-picture resto-picture--aLaFrancaise">
+                </div>
+                <div class="resto-description">
+                  <div class="resto-description__detail">
+                    <h3>&Agrave; la française</h3>
+                    <p>Cité Rouge</p>
+                  </div>
+                  <div class="resto-description__heart">
+                    <span class="far fa-heart heart-first"></span>
+                    <span class="fas fa-heart heart-second"></span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- Restaurant-module-3 END -->
+            <!-- Restaurant-module-4 -->
+            <div class="resto">
+              <a href="le-delice-des-sens.html">
+                <div class="resto-picture resto-picture--leDeliceDesSens">
+                </div>
+                <div class="resto-description">
+                  <div class="resto-description__detail">
+                    <h3>Le délice des sens</h3>
+                    <p>Folie-Méricourt</p>
+                  </div>
+                  <div class="resto-description__heart">
+                    <span class="far fa-heart heart-first"></span>
+                    <span class="fas fa-heart heart-second"></span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- Restaurant-module-4 END -->
+          </div>
         </nav>
         <!-- Navigation END -->
       </main>

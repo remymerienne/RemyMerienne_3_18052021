@@ -1,0 +1,52 @@
+// -----------------------------------------------------------------------------
+// * This file contains all styles related to the transition page effect.
+// -----------------------------------------------------------------------------
+
+// ================MENU================
+// - 1. Configuration
+// - 2. Mixin
+// - 4. Keyframe
+// - 5. Code
+// ====================================
+
+// - 1. Configuration
+// --------------------------
+
+$transition-time: 1000ms;
+$hidden-time: 4000ms;
+
+// - 2. Mixin
+// --------------------------
+
+/// @author Rémy Merienne
+/// @access public
+/// @param {time} $transition-time
+/// @param {time} $hidden-time 
+/// @requires @keyframes waiting-soft
+@mixin waiting-page ($transition-time, $hidden-time) {
+  .page {
+    opacity: 0.1;
+    animation: waiting-soft $transition-time $hidden-time linear forwards;
+  }
+}
+
+// - 3. Keyframe
+// --------------------------
+
+@keyframes waiting-soft {
+  0% {
+    opacity: 0.1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+// - 4. Code
+// --------------------------
+
+@include waiting-page ($transition-time, $hidden-time);
+
+// * End
+// * ------------------------

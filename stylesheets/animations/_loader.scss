@@ -1,0 +1,104 @@
+// -----------------------------------------------------------------------------
+// * This file contains all styles related to the loader effect.
+// -----------------------------------------------------------------------------
+
+// ================MENU================
+// - 1. Configuration
+// - 2. Mixins
+// - 3. Variables
+// - 4. Keyframes
+// - 5. Code
+// ====================================
+
+// - 1. Configuration
+// --------------------------
+
+$rotation-time: 4000ms;
+$full-opacity-time: 3000ms;
+$time-to-hide: 1000ms;
+
+$external-circle: 180px;
+$border-thickness:10px;
+$external-color: $primary-color;
+$middle-color: $secondary-color;
+$internal-color: $tertiary-color;
+
+// - 2. Mixin
+// --------------------------
+
+/// @author Rémy Merienne
+/// @access public
+/// @param {*} $border-thickness 
+/// @param {*} $rotation-time 
+/// @param {*} $full-opacity-time 
+/// @param {*} $time-to-hide 
+/// @requires @keyframes rotate
+/// @requires @keyframes hide-slow
+@mixin loader ($border-thickness, $rotation-time, $full-opacity-time, $time-to-hide) {
+  border: $border-thickness solid transparent;
+  border-radius: 50%;
+  animation: rotate $rotation-time linear, hide-slow $time-to-hide $full-opacity-time linear forwards;
+}
+
+// - 3. Variables
+// --------------------------
+
+$middle-circle: ($external-circle/3)*2;
+$internal-circle: $external-circle/3;
+
+// - 4. Keyframes
+// --------------------------
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(250deg);
+  }
+}
+
+@keyframes hide-slow {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+// - 5. Code
+// --------------------------
+
+.external-circle {
+  @extend %flex-all-center;
+  width: $external-circle;
+  height: $external-circle;
+  position: absolute;
+  top: 30%;
+  @include loader($border-thickness, $rotation-time, $full-opacity-time, $time-to-hide);
+  border-bottom-color: $external-color;
+  border-top-color: $external-color;
+}
+
+.middle-circle {
+  @extend %flex-all-center;
+  width: $middle-circle;
+  height: $middle-circle;
+  @include loader($border-thickness, $rotation-time, $full-opacity-time, $time-to-hide);
+  border-left-color: $middle-color;
+  border-right-color: $middle-color;
+}
+
+.internal-circle {
+  width: $internal-circle;
+  height: $internal-circle;
+  @include loader($border-thickness, $rotation-time, $full-opacity-time, $time-to-hide);
+  border-bottom-color: $internal-color;
+  border-top-color: $internal-color;
+}
+
+// * End
+// * ------------------------

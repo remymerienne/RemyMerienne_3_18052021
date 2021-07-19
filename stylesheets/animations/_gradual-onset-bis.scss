@@ -1,0 +1,94 @@
+// -----------------------------------------------------------------------------
+// * This file contains all styles related to the gradual onset effect.
+// -----------------------------------------------------------------------------
+
+// ================MENU================
+// - 1. Mixin
+// - 2. Keyframes
+// - 3. Code
+// ====================================
+
+// - 1. Mixin
+// --------------------------
+
+/// Gradual onset
+/// @author Rémy Merienne
+/// @access public
+/// @param {time} $delay - Animation execution time (ms)
+/// @requires @keyframes hide-slow
+/// @requires @keyframes slide
+@mixin hide-show-slide ($delay) {
+  animation: hide-show 500ms linear $delay forwards, slide 500ms linear $delay forwards;
+}
+
+// - 2. Keyframes
+// --------------------------
+
+@keyframes hide-show {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+// - 3. Code
+// --------------------------
+
+// Effets sur les entrés
+#gradual-onset-one {
+  @include hide-show-slide (500ms);
+}
+
+#gradual-onset-two {
+  @include hide-show-slide (800ms);
+}
+
+#gradual-onset-three {
+  @include hide-show-slide (1100ms);
+}
+
+#gradual-onset-four {
+  @include hide-show-slide (1400ms);
+}
+
+// Effets sur les plats
+#gradual-onset-five {
+  @include hide-show-slide (2000ms);
+}
+
+#gradual-onset-six {
+  @include hide-show-slide (2300ms);
+}
+
+#gradual-onset-seven {
+  @include hide-show-slide (2600ms);
+}
+
+// Effets sur les desserts
+#gradual-onset-eight {
+  @include hide-show-slide (3200ms);
+}
+
+#gradual-onset-nine {
+  @include hide-show-slide (3500ms);
+}
+
+#gradual-onset-ten {
+  @include hide-show-slide (3800ms);
+}
+
+// * End
+// * ------------------------

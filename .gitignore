@@ -5,3 +5,4 @@ dart-sass/
 *.css.map
 *.sass.map
 *.scss.map
+help/

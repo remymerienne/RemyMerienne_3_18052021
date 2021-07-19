@@ -4,15 +4,14 @@
 
 .container {
   display: flex;
-  align-items: center;
-  flex-direction: column;
-  margin: auto;
-  max-width: $max-width-container;
+  justify-content: center;
 }
 
 .page {
-  width: 100%;
-  max-width: $max-width-page;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: $max-width;
 }
 
 // * End
