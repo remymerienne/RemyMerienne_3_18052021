@@ -374,6 +374,7 @@ a {
   overflow: hidden;
   border-radius: 15px;
   background-color: white;
+  cursor: pointer;
   opacity: 0;
   transform: translateY(10px);
 }
@@ -386,7 +387,6 @@ a {
 
 .dish-detail {
   width: 90%;
-  cursor: pointer;
 }
 
 @media screen and (min-width: 375px) {
@@ -426,7 +426,6 @@ a {
   height: 70px;
   margin-right: -80px;
   background-color: #98e2cf;
-  cursor: pointer;
   transition: margin 500ms linear;
 }
 
