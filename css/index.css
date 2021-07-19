@@ -68,16 +68,6 @@ a {
   font-family: "Roboto", sans-serif;
 }
 
-@-webkit-keyframes rotate {
-  0% {
-    transform: rotate(0);
-  }
-
-  100% {
-    transform: rotate(250deg);
-  }
-}
-
 @keyframes rotate {
   0% {
     transform: rotate(0);
@@ -85,16 +75,6 @@ a {
 
   100% {
     transform: rotate(250deg);
-  }
-}
-
-@-webkit-keyframes hide-slow {
-  0% {
-    opacity: 1;
-  }
-
-  100% {
-    opacity: 0;
   }
 }
 
@@ -115,7 +95,6 @@ a {
   top: 30%;
   border: 10px solid transparent;
   border-radius: 50%;
-  -webkit-animation: rotate 4000ms linear, hide-slow 1000ms 3000ms linear forwards;
   animation: rotate 4000ms linear, hide-slow 1000ms 3000ms linear forwards;
   border-bottom-color: #9256dc;
   border-top-color: #9256dc;
@@ -126,7 +105,6 @@ a {
   height: 120px;
   border: 10px solid transparent;
   border-radius: 50%;
-  -webkit-animation: rotate 4000ms linear, hide-slow 1000ms 3000ms linear forwards;
   animation: rotate 4000ms linear, hide-slow 1000ms 3000ms linear forwards;
   border-left-color: #ff7ad9;
   border-right-color: #ff7ad9;
@@ -137,20 +115,9 @@ a {
   height: 60px;
   border: 10px solid transparent;
   border-radius: 50%;
-  -webkit-animation: rotate 4000ms linear, hide-slow 1000ms 3000ms linear forwards;
   animation: rotate 4000ms linear, hide-slow 1000ms 3000ms linear forwards;
   border-bottom-color: #98e2cf;
   border-top-color: #98e2cf;
-}
-
-@-webkit-keyframes waiting-soft {
-  0% {
-    opacity: 0.1;
-  }
-
-  100% {
-    opacity: 1;
-  }
 }
 
 @keyframes waiting-soft {
@@ -165,7 +132,6 @@ a {
 
 .page {
   opacity: 0.1;
-  -webkit-animation: waiting-soft 1000ms 4000ms linear forwards;
   animation: waiting-soft 1000ms 4000ms linear forwards;
 }
 
@@ -206,6 +172,10 @@ a {
   margin: 0;
   font-size: 16px;
   font-weight: 300;
+}
+
+.footer-line__mail {
+  text-decoration: underline;
 }
 
 .container {
