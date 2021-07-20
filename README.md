@@ -1,27 +1,32 @@
 # 1. ohmyfood
 
+Projet N°3 du parcours _Développeur Front-End_ [OpenClassrooms](https://openclassrooms.com/fr/).
+
+<img alt="HTML5" src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white"/><img alt="CSS3" src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white"/><img alt="SASS" src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white"/>
+
+<img alt="GIT" src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white"/><img alt="GIhub" src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"/><img alt="GITKRAKEN" src="https://img.shields.io/badge/GitKraken-179287?style=for-the-badge&logo=GitKraken&logoColor=white"/>
+
+L'intégration du site a été réalisée en HTML5, CSS3 et SASS sans Framework.
+
+Le cahier des charges est consultable [ici](supply/Brief-creatif-ohmyfood.pdf) et les maquettes [ici](supply/Maquettes-Ohmyfood)
+
 - [1. ohmyfood](#1-ohmyfood)
-  - [1.1. ***Index***](#11-index)
+  - [1.1. Accueil](#11-accueil)
     - [1.1.1. Découpage sémantique](#111-découpage-sémantique)
     - [1.1.2. Heading-level outline](#112-heading-level-outline)
     - [1.1.3. Découpage des tâches](#113-découpage-des-tâches)
       - [1.1.3.1. Développement des éléments du site par `feature`](#1131-développement-des-éléments-du-site-par-feature)
-      - [1.1.3.2. Commits réalisés par branche (GitKraken)](#1132-commits-réalisés-par-branche-gitkraken)
+      - [1.1.3.2. Commits réalisés par branche (_GitKraken)_](#1132-commits-réalisés-par-branche-gitkraken)
     - [1.1.4. SASS](#114-sass)
-    - [1.1.5. `release/v0.2.0`](#115-releasev020)
-  - [1.2. ***Menu***](#12-menu)
+  - [1.2. Menu](#12-menu)
     - [1.2.1. Découpage sémantique](#121-découpage-sémantique)
     - [1.2.2. Heading-level outline](#122-heading-level-outline)
     - [1.2.3. Découpage des tâches](#123-découpage-des-tâches)
       - [1.2.3.1. Développement des éléments du site par `feature`](#1231-développement-des-éléments-du-site-par-feature)
       - [1.2.3.2. Commits réalisés par branche (GitKraken)](#1232-commits-réalisés-par-branche-gitkraken)
     - [1.2.4. SASS](#124-sass)
-  - [1.3. `release/v0.3.0`](#13-releasev030)
-  - [1.4. Effets](#14-effets)
-    - [Commits réalisés dans la branche `effects` (GitKraken)](#commits-réalisés-dans-la-branche-effects-gitkraken)
-  - [1.5. `release/v0.4.0`](#15-releasev040)
 
-## 1.1. ***Index***
+## 1.1. Accueil
 
 ### 1.1.1. Découpage sémantique
 
@@ -32,20 +37,23 @@
 </header>
 <!-- Header END -->
 
+<!-- Bloc-introduction -->
+<div class="introduction" role="complementary">
+
+  <!-- Search-module -->
+  Recherche de la ville et du quartier
+  <!-- Search-module END -->
+
+  <h2>Réservez le menu qui vous convient</h2>
+  <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+
+  <!-- Button -->
+  <!-- Button END-->
+
+</div>
+<!-- Bloc-introduction END-->
+
 <main>
-
-  <section class="introduction">
-
-    <!-- Search-module -->
-    <!-- Search-module END -->
-
-    <h2>Réservez le menu qui vous convient</h2>
-    <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-
-    <!-- Button -->
-    <!-- Button END-->
-
-  </section>
   
   <section class="operation">
     <h2>Fonctionnement</h2>
@@ -107,14 +115,14 @@ Chaque partie de l'accueil a été développée dans sa propre branche _Git-flow
 
 - `feature/index`
 
-#### 1.1.3.2. Commits réalisés par branche (GitKraken)
+#### 1.1.3.2. Commits réalisés par branche (_GitKraken)_
 
 ![Apperçu des branches et des commits sur GitKraken](supply/kraken-index.png)
 
 ### 1.1.4. SASS
 
-La feuille de style _index.css_ a été générée par ***Sass***.  
-Ci-dessous, les différents fichiers contenant le code _"scss"_ et compilés vers _"index.css"_
+La feuille de style **index.css** a été générée par _SASS_.  
+Ci-dessous, les différents fichiers contenant le code _SCSS_ et compilés vers **index.css**
 
 ```scss
 @charset "UTF-8";
@@ -130,6 +138,10 @@ Ci-dessous, les différents fichiers contenant le code _"scss"_ et compilés ver
   'base/typography';
 
 @import
+  'animations/loader',
+  'animations/transition';
+
+@import
   'layout/header',
   'layout/footer',
   'layout/page';
@@ -142,13 +154,9 @@ Ci-dessous, les différents fichiers contenant le code _"scss"_ et compilés ver
   'pages/index';
 ```
 
-[Chaque fichier _"scss"_ peut être consulté dans le repertoire ***stylesheets***](#)
+Chaque fichier _SCSS_ peut être consulté dans le repertoire [**stylesheets**](stylesheets/)
 
-### 1.1.5. `release/v0.2.0`
-
-Version non responsive de l'accueil (optimisée IPhone 8, 375px) et sans effet.
-
-## 1.2. ***Menu***
+## 1.2. Menu
 
 ### 1.2.1. Découpage sémantique
 
@@ -201,7 +209,7 @@ Version non responsive de l'accueil (optimisée IPhone 8, 375px) et sans effet.
 
 #### 1.2.3.1. Développement des éléments du site par `feature`
 
-Chaque partie du menu "A la française" a été développée comme l'index, dans sa propre branche _Git-flow_
+Chaque partie des menus ont été développées comme l'**index**, dans leurs propres branches _Git-flow_
 
 - `feature/menu-header`
 
@@ -215,8 +223,8 @@ Chaque partie du menu "A la française" a été développée comme l'index, dans
 
 ###  1.2.4. SASS
 
-La feuille de style _menu.css_ a été générée par ***Sass***.  
-Ci-dessous, les différents fichiers contenant le code _"scss"_ et compilés vers _"menu.css"_
+La feuille de style **menu.css** a été générée par _SASS_.  
+Ci-dessous, les différents fichiers contenant le code _SCSS_ et compilés vers **menu.css**
 
 ```scss
 @charset "UTF-8";
@@ -232,6 +240,9 @@ Ci-dessous, les différents fichiers contenant le code _"scss"_ et compilés ver
   'base/typography';
 
 @import
+  'animations/gradual-onset';
+
+@import
   'layout/header',
   'layout/footer',
   'layout/page';
@@ -241,20 +252,9 @@ Ci-dessous, les différents fichiers contenant le code _"scss"_ et compilés ver
 
 @import
   'pages/menu'
+
 ```
 
-Chaque fichier _"scss"_ peut être consulté dans le repertoire [***stylesheets***](stylesheets/)
+Afin d'avoir un code _CSS_ le plus léger possible et afin d'éviter les répétitions, chaque menu possède sa propre feuille de style.
 
-## 1.3. `release/v0.3.0`
-
-Version non responsive de _menu_3.html_ (optimisée IPhone 8, 375px) et sans effet.
-
-## 1.4. Effets
-
-### Commits réalisés dans la branche `effects` (GitKraken)
-
-![Apperçu des branches et des commits sur GitKraken](supply/kraken-effects.png)
-
-## 1.5. `release/v0.4.0`
-
-Publication de _index.html et _menu_3.html_ avec les effets.
+Chaque fichier _SCSS_ peut être consulté dans le repertoire [**stylesheets**](stylesheets/).

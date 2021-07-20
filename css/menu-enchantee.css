@@ -73,6 +73,16 @@ a {
   font-family: "Roboto", sans-serif;
 }
 
+@-webkit-keyframes hide-show {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 @keyframes hide-show {
   0% {
     opacity: 0;
@@ -80,6 +90,16 @@ a {
 
   100% {
     opacity: 1;
+  }
+}
+
+@-webkit-keyframes slide {
+  0% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(0);
   }
 }
 
@@ -94,43 +114,53 @@ a {
 }
 
 #gradual-onset-one {
-  animation: hide-show 500ms linear 500ms forwards, slide 500ms linear 500ms forwards;
+  -webkit-animation: hide-show 500ms linear 500ms forwards, slide 500ms linear 500ms forwards;
+          animation: hide-show 500ms linear 500ms forwards, slide 500ms linear 500ms forwards;
 }
 
 #gradual-onset-two {
-  animation: hide-show 500ms linear 800ms forwards, slide 500ms linear 800ms forwards;
+  -webkit-animation: hide-show 500ms linear 800ms forwards, slide 500ms linear 800ms forwards;
+          animation: hide-show 500ms linear 800ms forwards, slide 500ms linear 800ms forwards;
 }
 
 #gradual-onset-three {
-  animation: hide-show 500ms linear 1100ms forwards, slide 500ms linear 1100ms forwards;
+  -webkit-animation: hide-show 500ms linear 1100ms forwards, slide 500ms linear 1100ms forwards;
+          animation: hide-show 500ms linear 1100ms forwards, slide 500ms linear 1100ms forwards;
 }
 
 #gradual-onset-four {
-  animation: hide-show 500ms linear 1400ms forwards, slide 500ms linear 1400ms forwards;
+  -webkit-animation: hide-show 500ms linear 1400ms forwards, slide 500ms linear 1400ms forwards;
+          animation: hide-show 500ms linear 1400ms forwards, slide 500ms linear 1400ms forwards;
 }
 
 #gradual-onset-five {
-  animation: hide-show 500ms linear 2000ms forwards, slide 500ms linear 2000ms forwards;
+  -webkit-animation: hide-show 500ms linear 2000ms forwards, slide 500ms linear 2000ms forwards;
+          animation: hide-show 500ms linear 2000ms forwards, slide 500ms linear 2000ms forwards;
 }
 
 #gradual-onset-six {
-  animation: hide-show 500ms linear 2300ms forwards, slide 500ms linear 2300ms forwards;
+  -webkit-animation: hide-show 500ms linear 2300ms forwards, slide 500ms linear 2300ms forwards;
+          animation: hide-show 500ms linear 2300ms forwards, slide 500ms linear 2300ms forwards;
 }
 
 #gradual-onset-seven {
-  animation: hide-show 500ms linear 2600ms forwards, slide 500ms linear 2600ms forwards;
+  -webkit-animation: hide-show 500ms linear 2600ms forwards, slide 500ms linear 2600ms forwards;
+          animation: hide-show 500ms linear 2600ms forwards, slide 500ms linear 2600ms forwards;
 }
 
 #gradual-onset-eight {
-  animation: hide-show 500ms linear 3200ms forwards, slide 500ms linear 3200ms forwards;
+  -webkit-animation: hide-show 500ms linear 3200ms forwards, slide 500ms linear 3200ms forwards;
+          animation: hide-show 500ms linear 3200ms forwards, slide 500ms linear 3200ms forwards;
 }
 
 #gradual-onset-nine {
-  animation: hide-show 500ms linear 3500ms forwards, slide 500ms linear 3500ms forwards;
+  -webkit-animation: hide-show 500ms linear 3500ms forwards, slide 500ms linear 3500ms forwards;
+          animation: hide-show 500ms linear 3500ms forwards, slide 500ms linear 3500ms forwards;
 }
 
 #gradual-onset-ten {
-  animation: hide-show 500ms linear 3800ms forwards, slide 500ms linear 3800ms forwards;
+  -webkit-animation: hide-show 500ms linear 3800ms forwards, slide 500ms linear 3800ms forwards;
+          animation: hide-show 500ms linear 3800ms forwards, slide 500ms linear 3800ms forwards;
 }
 
 .header__h1 {
