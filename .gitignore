@@ -1,8 +1,2 @@
 .DS_Store
-note.txt
-.sass-cache/
-dart-sass/
 *.css.map
-*.sass.map
-*.scss.map
-help/
